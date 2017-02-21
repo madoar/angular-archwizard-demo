@@ -3,18 +3,20 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { WizardTestComponent } from './pizza.component';
+import {WizardModule} from "ng2-archwizard/dist";
 
 @NgModule({
   declarations: [
-    AppComponent
+    WizardTestComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    WizardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [WizardTestComponent]
 })
 export class AppModule { }
