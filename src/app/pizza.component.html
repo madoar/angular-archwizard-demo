@@ -18,79 +18,81 @@
       <option value="width-60">60%</option>
       <option value="width-50">50%</option>
     </select>
+
+    <label for="showBorder">Show border around wizard:</label>
+    <input type="checkbox" id="showBorder" name="showBorder" [(ngModel)]="showBorder">
   </div>
 
-  <div [ngClass]="{
+  <wizard [navBarLocation]="navBarLocation" [ngClass]="{
     'width-100': navBarWidth == 'width-100',
     'width-90': navBarWidth == 'width-90',
     'width-80': navBarWidth == 'width-80',
     'width-70': navBarWidth == 'width-70',
     'width-60': navBarWidth == 'width-60',
-    'width-50': navBarWidth == 'width-50'
+    'width-50': navBarWidth == 'width-50',
+    'bordered': showBorder
   }">
-    <wizard [navBarLocation]="navBarLocation">
-      <wizard-step title="Dough">
-        <div style="margin: auto; text-align: center;">
-          <div style="width: 100%; padding: 0 0 10px 0; ">
-            Welcome to our pizza delivery service! <br>
-            Please choose your dough: <br>
+    <wizard-step title="Dough">
+      <div style="margin: auto; text-align: center;">
+        <div style="width: 100%; padding: 0 0 10px 0; ">
+          Welcome to our pizza delivery service! <br>
+          Please choose your dough: <br>
 
-            <input type="text" id="dough" [(ngModel)]="dough">
-          </div>
-          <button type="button" nextStep>Choose your fillings</button>
+          <input type="text" id="dough" [(ngModel)]="dough">
         </div>
-      </wizard-step>
-      <wizard-step title="Toppings">
-        <div style="margin: auto; text-align: center;">
-          <div style="width: 100%; padding: 0 0 10px 0; ">
-            Your choosen dough was: {{dough}}! <br>
-            Now please choose your toppings: <br>
+        <button type="button" nextStep>Choose your fillings</button>
+      </div>
+    </wizard-step>
+    <wizard-step title="Toppings">
+      <div style="margin: auto; text-align: center;">
+        <div style="width: 100%; padding: 0 0 10px 0; ">
+          Your choosen dough was: {{dough}}! <br>
+          Now please choose your toppings: <br>
 
-            <div>
-              <label for="topping1">1st Topping:</label>
-              <input type="text" id="topping1" [(ngModel)]="topping1">
-            </div>
-
-            <div>
-              <label for="topping2">2nd Topping:</label>
-              <input type="text" id="topping2" [(ngModel)]="topping2">
-            </div>
-
-            <div>
-              <label for="topping3">3rd Topping:</label>
-              <input type="text" id="topping3" [(ngModel)]="topping3">
-            </div>
+          <div>
+            <label for="topping1">1st Topping:</label>
+            <input type="text" id="topping1" [(ngModel)]="topping1">
           </div>
-          <button type="button" nextStep>Input your delivery address</button>
-        </div>
-      </wizard-step>
-      <wizard-step title="Delivery address">
-        <div style="margin: auto; text-align: center;">
-          <div style="width: 100%; padding: 0 0 10px 0; ">
-            Your choosen dough was: {{dough}}! <br>
-            Your choosen toppings were: {{toppings}}! <br>
-            Now please input your deliver address: <br>
 
-            <div>
-              <label for="street">Street:</label>
-              <input type="text" id="street" [(ngModel)]="street">
-            </div>
-
-            <div>
-              <label for="country">City:</label>
-              <input type="text" id="city" [(ngModel)]="city">
-            </div>
-
-            <div>
-              <label for="country">Country:</label>
-              <input type="text" id="country" [(ngModel)]="country">
-            </div>
+          <div>
+            <label for="topping2">2nd Topping:</label>
+            <input type="text" id="topping2" [(ngModel)]="topping2">
           </div>
-          <button type="button" (click)="deliver();">Deliver my pizza!</button>
+
+          <div>
+            <label for="topping3">3rd Topping:</label>
+            <input type="text" id="topping3" [(ngModel)]="topping3">
+          </div>
         </div>
-      </wizard-step>
-    </wizard>
-  </div>
+        <button type="button" nextStep>Input your delivery address</button>
+      </div>
+    </wizard-step>
+    <wizard-step title="Delivery address">
+      <div style="margin: auto; text-align: center;">
+        <div style="width: 100%; padding: 0 0 10px 0; ">
+          Your choosen dough was: {{dough}}! <br>
+          Your choosen toppings were: {{toppings}}! <br>
+          Now please input your deliver address: <br>
+
+          <div>
+            <label for="street">Street:</label>
+            <input type="text" id="street" [(ngModel)]="street">
+          </div>
+
+          <div>
+            <label for="country">City:</label>
+            <input type="text" id="city" [(ngModel)]="city">
+          </div>
+
+          <div>
+            <label for="country">Country:</label>
+            <input type="text" id="country" [(ngModel)]="country">
+          </div>
+        </div>
+        <button type="button" (click)="deliver();">Deliver my pizza!</button>
+      </div>
+    </wizard-step>
+  </wizard>
 </div>
 
 <div *ngIf="finished">
