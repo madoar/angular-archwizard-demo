@@ -41,9 +41,10 @@
           <input type="text" id="dough" [(ngModel)]="dough">
         </div>
         <button type="button" nextStep>Choose your fillings</button>
+        <button type="button" [goToStep]="{stepOffset: 2}">I want no fillings</button>
       </div>
     </wizard-step>
-    <wizard-step title="Toppings">
+    <wizard-step title="Toppings" [canExit]="isStepTwoComplete" optionalStep>
       <div style="margin: auto; text-align: center;">
         <div style="width: 100%; padding: 0 0 10px 0; ">
           Your choosen dough was: {{dough}}! <br>
@@ -63,6 +64,10 @@
             <label for="topping3">3rd Topping:</label>
             <input type="text" id="topping3" [(ngModel)]="topping3">
           </div>
+
+          <br>
+          <br>
+          To go to the next step you need to select at least one topping!
         </div>
         <button type="button" nextStep>Input your delivery address</button>
       </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MovingDirection} from "ng2-archwizard/dist";
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,15 @@ export class WizardTestComponent {
   public street: string;
   public city: string;
   public country: string;
+
+  /**
+   * This function must be written as an arrow function, to get the scoping for "this" right
+   * @param movingDirection
+   * @returns {boolean}
+   */
+  public isStepTwoComplete = (movingDirection: MovingDirection) => {
+    return movingDirection === MovingDirection.Backwards || this.toppings.length > 0;
+  };
 
   /**
    * Returns a formatted string containing all toppings
