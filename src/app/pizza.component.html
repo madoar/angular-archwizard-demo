@@ -21,9 +21,19 @@
 
     <label for="showBorder">Show border around wizard:</label>
     <input type="checkbox" id="showBorder" name="showBorder" [(ngModel)]="showBorder">
+
+    <label for="navigationLayout">Use navigation bar layout:</label>
+    <select id="navigationLayout" [(ngModel)]="navigationLayout">
+      <option value="small">Small/Default</option>
+      <option value="large-filled">Large-filled</option>
+      <option value="large-empty">Large-empty</option>
+      <option value="large-symbols">Large-symbols</option>
+    </select>
   </div>
 
-  <wizard [navBarLocation]="navBarLocation" [ngClass]="{
+  <wizard [navBarLocation]="navBarLocation"
+          [navigationLayout]="navigationLayout"
+          [ngClass]="{
     'width-100': navBarWidth == 'width-100',
     'width-90': navBarWidth == 'width-90',
     'width-80': navBarWidth == 'width-80',
@@ -32,7 +42,7 @@
     'width-50': navBarWidth == 'width-50',
     'bordered': showBorder
   }">
-    <wizard-step title="Dough">
+    <wizard-step title="Dough" navigationSymbol="&#xf185;" navigationSymbolFontFamily="FontAwesome">
       <div style="margin: auto; text-align: center;">
         <div style="width: 100%; padding: 0 0 10px 0; ">
           Welcome to our pizza delivery service! <br>
@@ -44,7 +54,7 @@
         <button type="button" [goToStep]="{stepOffset: 2}">I want no fillings</button>
       </div>
     </wizard-step>
-    <wizard-step title="Toppings" [canExit]="isStepTwoComplete" optionalStep>
+    <wizard-step title="Toppings" navigationSymbol="&#xf16c;" navigationSymbolFontFamily="FontAwesome" [canExit]="isStepTwoComplete" optionalStep>
       <div style="margin: auto; text-align: center;">
         <div style="width: 100%; padding: 0 0 10px 0; ">
           Your choosen dough was: {{dough}}! <br>
@@ -72,7 +82,7 @@
         <button type="button" nextStep>Input your delivery address</button>
       </div>
     </wizard-step>
-    <wizard-step title="Delivery address">
+    <wizard-step title="Delivery address" navigationSymbol='&#xf1ba;' navigationSymbolFontFamily="FontAwesome">
       <div style="margin: auto; text-align: center;">
         <div style="width: 100%; padding: 0 0 10px 0; ">
           Your choosen dough was: {{dough}}! <br>
@@ -139,6 +149,6 @@
 </div>
 
 <footer>
-  This demo uses ng2-archwizard version 1.3.1
+  This demo uses ng2-archwizard version 1.4.0
 </footer>
 

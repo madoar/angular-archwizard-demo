@@ -12,6 +12,7 @@ export class WizardTestComponent {
   public navBarLocation = "top";
   public navBarWidth = "none";
   public showBorder = false;
+  public navigationLayout = "small";
 
   public dough: string;
 

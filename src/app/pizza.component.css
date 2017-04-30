@@ -1,3 +1,7 @@
+* li::after {
+  font-family: FontAwesome;
+}
+
 .width-50 {
   margin: auto;
   width: 50%;
