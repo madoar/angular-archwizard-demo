@@ -32,7 +32,7 @@
     </select>
 
     <label for="showCompletionStep">Show completion step:</label>
-    <input type="checkbox" id="showCompletionStep" name="showCompletionStep" [(ngModel)]="showCompletionStep">
+    <input type="checkbox" id="showCompletionStep" name="showCompletionStep" [(ngModel)]="showCompletionStep" [disabled]="insideCompletionStep">
   </div>
 
   <hr style="margin: 10px;">

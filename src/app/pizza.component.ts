@@ -29,6 +29,14 @@ export class WizardTestComponent {
   @ViewChild(WizardComponent)
   public wizard: WizardComponent;
 
+  public get insideCompletionStep(): boolean {
+    if (!this.wizard) {
+      return false;
+    } else {
+      return this.wizard.currentStepIndex === 3;
+    }
+  }
+
   /**
    * This function must be written as an arrow function, to get the scoping for "this" right
    * @param movingDirection
