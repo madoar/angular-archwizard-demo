@@ -1,5 +1,5 @@
-<div *ngIf="!finished">
-  <div style="padding-bottom: 10px;">
+<div *ngIf="!showWizard">
+  <div class="centered">
     <label for="navBarLocation">Navigation bar location:</label>
     <select id="navBarLocation" [(ngModel)]="navBarLocation">
       <option value="top">top</option>
@@ -30,7 +30,12 @@
       <option value="large-empty">Large-empty</option>
       <option value="large-empty-symbols">Large-empty-symbols</option>
     </select>
+
+    <label for="showCompletionStep">Show completion step:</label>
+    <input type="checkbox" id="showCompletionStep" name="showCompletionStep" [(ngModel)]="showCompletionStep">
   </div>
+
+  <hr style="margin: 10px;">
 
   <wizard [navBarLocation]="navBarLocation"
           [navBarLayout]="navigationLayout"
@@ -43,8 +48,8 @@
     'width-50': navBarWidth == 'width-50',
     'bordered': showBorder
   }">
-    <wizard-step title="Dough" navigationSymbol="&#xf185;" navigationSymbolFontFamily="FontAwesome">
-      <div style="margin: auto; text-align: center;">
+    <wizard-step title="Dough" navigationSymbol="&#xf185;" navigationSymbolFontFamily="FontAwesome" (stepEnter)="reset()">
+      <div class="centered">
         <div style="width: 100%; padding: 0 0 10px 0; ">
           Welcome to our pizza delivery service! <br>
           Please choose your dough: <br>
@@ -55,8 +60,9 @@
         <button type="button" [goToStep]="{stepOffset: 2}">I want no fillings</button>
       </div>
     </wizard-step>
-    <wizard-step title="Toppings" navigationSymbol="&#xf16c;" navigationSymbolFontFamily="FontAwesome" [canExit]="isStepTwoComplete" optionalStep>
-      <div style="margin: auto; text-align: center;">
+    <wizard-step title="Toppings" navigationSymbol="&#xf16c;" navigationSymbolFontFamily="FontAwesome"
+                 [canExit]="isStepTwoComplete" optionalStep>
+      <div class="centered">
         <div style="width: 100%; padding: 0 0 10px 0; ">
           Your choosen dough was: {{dough}}! <br>
           Now please choose your toppings: <br>
@@ -84,7 +90,7 @@
       </div>
     </wizard-step>
     <wizard-step title="Delivery address" navigationSymbol='&#xf1ba;' navigationSymbolFontFamily="FontAwesome">
-      <div style="margin: auto; text-align: center;">
+      <div class="centered">
         <div style="width: 100%; padding: 0 0 10px 0; ">
           Your choosen dough was: {{dough}}! <br>
           Your choosen toppings were: {{toppings}}! <br>
@@ -105,13 +111,53 @@
             <input type="text" id="country" [(ngModel)]="country">
           </div>
         </div>
-        <button type="button" (click)="deliver();">Deliver my pizza!</button>
+        <button type="button" *ngIf="showCompletionStep" nextStep>Deliver my pizza!</button>
+        <button type="button" (click)="deliver();">Deliver my pizza! (Leave wizard)</button>
       </div>
     </wizard-step>
+    <wizard-completion-step *ngIf="showCompletionStep" title="Delivered" navigationSymbol='&#xf1ba;' navigationSymbolFontFamily="FontAwesome">
+      <div class="centered">
+        <table class="centered">
+          <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>Dough</td>
+            <td>{{dough}}</td>
+          </tr>
+          <tr>
+            <td>1st Topping</td>
+            <td>{{topping1}}</td>
+          </tr>
+          <tr>
+            <td>2nd Topping</td>
+            <td>{{topping2}}</td>
+          </tr>
+          <tr>
+            <td>3rd Topping</td>
+            <td>{{topping3}}</td>
+          </tr>
+          <tr>
+            <td>Street</td>
+            <td>{{street}}</td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td>{{city}}</td>
+          </tr>
+          <tr>
+            <td>Country</td>
+            <td>{{country}}</td>
+          </tr>
+        </table>
+        <button type="button" (click)="wizard.reset()">Reset wizard</button>
+      </div>
+    </wizard-completion-step>
   </wizard>
 </div>
 
-<div *ngIf="finished">
+<div *ngIf="showWizard" class="centered">
   <table>
     <tr>
       <th>Parameter</th>
@@ -152,4 +198,3 @@
 <footer>
   This demo uses ng2-archwizard version 1.4.1
 </footer>
-
