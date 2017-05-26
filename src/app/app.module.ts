@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { WizardTestComponent } from './pizza.component';
-import {WizardModule} from "ng2-archwizard/dist";
+import {WizardModule} from 'ng2-archwizard';
 
 @NgModule({
   declarations: [

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {MovingDirection} from "ng2-archwizard/dist";
+import {Component, ViewChild} from '@angular/core';
+import {MovingDirection, WizardComponent} from 'ng2-archwizard';
 
 @Component({
   selector: 'app-root',
@@ -7,22 +7,35 @@ import {MovingDirection} from "ng2-archwizard/dist";
   styleUrls: ['pizza.component.css']
 })
 export class WizardTestComponent {
-  public finished = false;
+  public showWizard = false;
 
   public navBarLocation = "top";
   public navBarWidth = "none";
   public showBorder = false;
   public navigationLayout = "small";
 
-  public dough: string;
+  public dough: string = null;
 
-  public topping1: string;
-  public topping2: string;
-  public topping3: string;
+  public topping1: string = null;
+  public topping2: string = null;
+  public topping3: string = null;
 
-  public street: string;
-  public city: string;
-  public country: string;
+  public street: string = null;
+  public city: string = null;
+  public country: string = null;
+
+  public showCompletionStep = true;
+
+  @ViewChild(WizardComponent)
+  public wizard: WizardComponent;
+
+  public get insideCompletionStep(): boolean {
+    if (!this.wizard) {
+      return false;
+    } else {
+      return this.wizard.currentStepIndex === 3;
+    }
+  }
 
   /**
    * This function must be written as an arrow function, to get the scoping for "this" right
@@ -58,7 +71,7 @@ export class WizardTestComponent {
    * Makes the wizard invisible and shows the input
    */
   public deliver(): void {
-    this.finished = true;
+    this.showWizard = true;
   }
 
   /**
@@ -73,8 +86,8 @@ export class WizardTestComponent {
 
     this.street = null;
     this.city = null;
-    this.city = null;
+    this.country = null;
 
-    this.finished = false;
+    this.showWizard = false;
   }
 }
