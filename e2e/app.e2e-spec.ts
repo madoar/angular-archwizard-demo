@@ -1,14 +1,16 @@
-import { ArchwizarddemoPage } from './app.po';
+import { ArchwizardDemoPage } from './app.po';
 
-describe('archwizarddemo App', () => {
-  let page: ArchwizarddemoPage;
+describe('archwizard-demo App', () => {
+  let page: ArchwizardDemoPage;
 
   beforeEach(() => {
-    page = new ArchwizarddemoPage();
+    page = new ArchwizardDemoPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', done => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    page.getParagraphText()
+      .then(msg => expect(msg).toEqual('Welcome to app!!'))
+      .then(done, done.fail);
   });
 });

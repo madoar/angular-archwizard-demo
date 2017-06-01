@@ -1,14 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
-import { WizardTestComponent } from './pizza.component';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 import {WizardModule} from 'ng2-archwizard';
+import { PizzaComponent } from './pizza.component';
 
 @NgModule({
   declarations: [
-    WizardTestComponent
+    PizzaComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +16,6 @@ import {WizardModule} from 'ng2-archwizard';
     WizardModule
   ],
   providers: [],
-  bootstrap: [WizardTestComponent]
+  bootstrap: [PizzaComponent]
 })
 export class AppModule { }
