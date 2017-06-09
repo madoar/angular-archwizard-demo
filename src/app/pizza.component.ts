@@ -6,7 +6,7 @@ import {MovingDirection, WizardComponent} from 'ng2-archwizard';
   templateUrl: 'pizza.component.html',
   styleUrls: ['pizza.component.css']
 })
-export class WizardTestComponent {
+export class PizzaComponent {
   public showWizard = false;
 
   public navBarLocation = "top";

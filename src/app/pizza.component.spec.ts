@@ -1,32 +1,25 @@
-import { TestBed, async } from '@angular/core/testing';
-import { WizardTestComponent } from './pizza.component';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-describe('AppComponent', () => {
-  beforeEach(() => {
+import { PizzaComponent } from './pizza.component';
+
+describe('PizzaComponent', () => {
+  let component: PizzaComponent;
+  let fixture: ComponentFixture<PizzaComponent>;
+
+  beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        WizardTestComponent
-      ],
-    });
-    TestBed.compileComponents();
+      declarations: [ PizzaComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(PizzaComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
   });
 
-  it('should create the app', async(() => {
-    const fixture = TestBed.createComponent(WizardTestComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  }));
-
-  it(`should have as title 'app works!'`, async(() => {
-    const fixture = TestBed.createComponent(WizardTestComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('app works!');
-  }));
-
-  it('should render title in a h1 tag', async(() => {
-    const fixture = TestBed.createComponent(WizardTestComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('app works!');
-  }));
+  it('should be created', () => {
+    expect(component).toBeTruthy();
+  });
 });

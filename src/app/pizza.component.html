@@ -89,7 +89,11 @@
         <button type="button" nextStep>Input your delivery address</button>
       </div>
     </wizard-step>
-    <wizard-step title="Delivery address" navigationSymbol='&#xf1ba;' navigationSymbolFontFamily="FontAwesome">
+    <wizard-step navigationSymbol='&#xf1ba;' navigationSymbolFontFamily="FontAwesome">
+      <ng-template wizardStepTitle>
+        <span class="hidden-sm-down" style="color:red;">Delivery address</span>
+        <span class="hidden-md-up">Address</span>
+      </ng-template>
       <div class="centered">
         <div style="width: 100%; padding: 0 0 10px 0; ">
           Your choosen dough was: {{dough}}! <br>
@@ -196,5 +200,5 @@
 </div>
 
 <footer>
-  This demo uses ng2-archwizard version 1.5.1
+  This demo uses ng2-archwizard version 1.6.0
 </footer>
