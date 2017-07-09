@@ -1,0 +1,30 @@
+<wizard #wizard>
+  <wizard-step title="Steptitle 1">
+    <div class="centered-content">
+      <div>
+        Content: Step 1
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+      </div>
+    </div>
+  </wizard-step>
+  <wizard-step title="Steptitle 2">
+    <div class="centered-content">
+      <div>
+        Content: Step 2
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" previousStep>Back</button>
+        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+      </div>
+    </div>
+  </wizard-step>
+  <wizard-completion-step title="Completion steptitle">
+    <div class="centered-content">
+      Completion step content
+    </div>
+  </wizard-completion-step>
+</wizard>

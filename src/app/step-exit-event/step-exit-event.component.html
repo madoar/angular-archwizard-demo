@@ -1,0 +1,37 @@
+<wizard #wizard>
+  <wizard-step title="Steptitle 1" (stepExit)="increaseCounter1($event)">
+    <div class="centered-content">
+      <div>
+        You've exited the first step {{counter1}} times!
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+      </div>
+    </div>
+  </wizard-step>
+  <wizard-step title="Steptitle 2" (stepExit)="increaseCounter2($event)">
+    <div class="centered-content">
+      <div>
+        You've exited the second step {{counter2}} times!
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" previousStep>Back</button>
+        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+      </div>
+    </div>
+  </wizard-step>
+  <wizard-step title="Steptitle 3" (stepExit)="increaseCounter3($event)">
+    <div class="centered-content">
+      <div>
+        You've exited the third step {{counter3}} times!
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" previousStep>Back</button>
+        <button type="button" class="btn btn-secondary" (click)="wizard.reset()">Reset</button>
+      </div>
+    </div>
+  </wizard-step>
+</wizard>
