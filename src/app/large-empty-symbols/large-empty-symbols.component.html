@@ -1,0 +1,37 @@
+<wizard #wizard navBarLayout="large-empty-symbols">
+  <wizard-step title="Steptitle 1" navigationSymbol="1">
+    <div class="centered-content">
+      <div>
+        Content: Step 1
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+      </div>
+    </div>
+  </wizard-step>
+  <wizard-step title="Steptitle 2" navigationSymbol="2">
+    <div class="centered-content">
+      <div>
+        Content: Step 2
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" previousStep>Back</button>
+        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+      </div>
+    </div>
+  </wizard-step>
+  <wizard-step title="Steptitle 3" navigationSymbol="3">
+    <div class="centered-content">
+      <div>
+        Content: Step 3
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" previousStep>Back</button>
+        <button type="button" class="btn btn-secondary" (click)="wizard.reset()">Reset</button>
+      </div>
+    </div>
+  </wizard-step>
+</wizard>

@@ -1,0 +1,120 @@
+<div class="container-fluid" style="height: 100%">
+  <div class="row" style="height: 100%">
+    <div class="col-sm-2 nopadding">
+      <div class="nav-side-menu">
+        <div class="brand">ng2-archwizard</div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+        <div class="menu-list">
+          <ul id="menu-content" class="menu-content collapse out">
+            <li routerLink="/basic" routerLinkActive="active">
+              <a>Basic</a>
+            </li>
+
+            <li data-toggle="collapse" data-target="#navBarLayout" class="collapsed">
+              <a>Navigation bar layout<span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="navBarLayout" [ngClass]="{ 'collapse': !isInFunction('layout') }">
+              <li routerLink="/layout/small" routerLinkActive="active">
+                <a>Small</a>
+              </li>
+              <li routerLink="/layout/large-filled" routerLinkActive="active">
+                <a>Large filled</a>
+              </li>
+              <li routerLink="/layout/large-empty" routerLinkActive="active">
+                <a>Large empty</a>
+              </li>
+              <li routerLink="/layout/large-filled-symbols" routerLinkActive="active">
+                <a>Large filled with Symbols</a>
+              </li>
+              <li routerLink="/layout/large-empty-symbols" routerLinkActive="active">
+                <a>Large empty with Symbols</a>
+              </li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#navBarSymbol" class="collapsed">
+              <a>Navigation step symbol<span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="navBarSymbol" [ngClass]="{ 'collapse': !isInFunction('navigation-symbol') }">
+              <li routerLink="/navigation-symbol/basic" routerLinkActive="active">
+                <a>Basic</a>
+              </li>
+              <li routerLink="/navigation-symbol/custom" routerLinkActive="active">
+                <a>Custom font</a>
+              </li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#navBarLocation" class="collapsed">
+              <a>Navigation bar location<span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu" id="navBarLocation" [ngClass]="{ 'collapse': !isInFunction('navigation-location') }">
+              <li routerLink="/navigation-location/top" routerLinkActive="active">
+                <a>Top/Default</a>
+              </li>
+              <li routerLink="/navigation-location/left" routerLinkActive="active">
+                <a>Left</a>
+              </li>
+              <li routerLink="/navigation-location/right" routerLinkActive="active">
+                <a>Right</a>
+              </li>
+              <li routerLink="/navigation-location/bottom" routerLinkActive="active">
+                <a>Bottom</a>
+              </li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#completionStep" class="collapsed">
+              <a>Completion step<span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu" id="completionStep" [ngClass]="{ 'collapse': !isInFunction('completion-step') }">
+              <li routerLink="/completion-step/basic" routerLinkActive="active">
+                <a>Basic</a>
+              </li>
+              <li routerLink="/completion-step/back-links" routerLinkActive="active">
+                <a>Enable back navigation</a>
+              </li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#stepOutputs" class="collapsed">
+              <a>Step events<span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu" id="stepOutputs" [ngClass]="{ 'collapse': !isInFunction('step-event') }">
+              <li routerLink="/step-event/step-enter" routerLinkActive="active">
+                <a>On entering a step</a>
+              </li>
+              <li routerLink="/step-event/step-exit" routerLinkActive="active">
+                <a>On exiting a step</a>
+              </li>
+            </ul>
+
+            <li routerLink="/custom-step-titles" routerLinkActive="active">
+              <a>Custom designed step titles</a>
+            </li>
+
+            <li routerLink="/optional-steps" routerLinkActive="active">
+              <a>Optional steps</a>
+            </li>
+
+            <li routerLink="/arbitrary-step-navigation" routerLinkActive="active">
+              <a>Navigate to an arbitrary step</a>
+            </li>
+
+            <li routerLink="/wizard-step-directives" routerLinkActive="active">
+              <a>Define wizard steps via directives</a>
+            </li>
+
+            <li routerLink="/reset-wizard" routerLinkActive="active">
+              <a>Reset wizard</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10 fullscreen">
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+      <footer>
+        This demo uses ng2-archwizard version 1.7.0
+      </footer>
+    </div>
+  </div>
+</div>
