@@ -26,6 +26,7 @@ import {ArbitraryStepNavigationModule} from './arbitrary-step-navigation/arbitra
 import {WizardStepDirectivesModule} from './wizard-step-directives/wizard-step-directives.module';
 import {ResetWizardModule} from './reset-wizard/reset-wizard.module';
 import {AppRoutingModule} from './app-routing.module';
+import {CanExitEventModule} from './can-exit-event/can-exit-event.module';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import {AppRoutingModule} from './app-routing.module';
     CompletionStepBackNavigationModule,
     StepEnterEventModule,
     StepExitEventModule,
+    CanExitEventModule,
     CustomStepTitlesModule,
     OptionalStepsModule,
     ArbitraryStepNavigationModule,
