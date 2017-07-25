@@ -21,6 +21,7 @@ import {WizardStepDirectivesComponent} from './wizard-step-directives/wizard-ste
 import {ResetWizardComponent} from './reset-wizard/reset-wizard.component';
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
+import {CanExitEventComponent} from './can-exit-event/can-exit-event.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -43,6 +44,7 @@ const appRoutes: Routes = [
   { path: 'completion-step/back-links', component: CompletionStepBackNavigationComponent },
   { path: 'step-event/step-enter', component: StepEnterEventComponent },
   { path: 'step-event/step-exit', component: StepExitEventComponent },
+  { path: 'step-event/can-exit', component: CanExitEventComponent },
   { path: 'custom-step-titles', component: CustomStepTitlesComponent },
   { path: 'optional-steps', component: OptionalStepsComponent },
   { path: 'arbitrary-step-navigation', component: ArbitraryStepNavigationComponent },

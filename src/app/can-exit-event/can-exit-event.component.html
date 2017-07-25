@@ -1,0 +1,57 @@
+<wizard #wizard>
+  <wizard-step title="Steptitle 1" [canExit]="canExitStep1">
+    <div class="centered-content">
+      <div>
+        Content: Step 1
+      </div>
+
+      <div class="checkbox">
+        <input id="canExitStep1" type="checkbox" [(ngModel)]="canExitStep1"/>
+        <label for="canExitStep1">Allow exiting step 1</label>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+      </div>
+    </div>
+  </wizard-step>
+  <wizard-step title="Steptitle 2" [canExit]="canExitStep2">
+    <div class="centered-content">
+      <div>
+        Content: Step 2
+      </div>
+
+      <div class="checkbox">
+        <input id="canExitStep2Backwards" type="checkbox" [(ngModel)]="canExitStep2Backwards"/>
+        <label for="canExitStep2Backwards">Allow exiting step 2 backwards</label>
+
+        <br>
+
+        <input id="canExitStep2Forwards" type="checkbox" [(ngModel)]="canExitStep2Forwards"/>
+        <label for="canExitStep2Forwards">Allow exiting step 2 forwards</label>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" previousStep>Back</button>
+        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+      </div>
+    </div>
+  </wizard-step>
+  <wizard-step title="Steptitle 3" [canExit]="canExitStep3">
+    <div class="centered-content">
+      <div>
+        Content: Step 3
+      </div>
+
+      <div class="checkbox">
+        <input id="canExitStep3" type="checkbox" [(ngModel)]="canExitStep3"/>
+        <label for="canExitStep3">Allow exiting step 3</label>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" previousStep>Back</button>
+        <button type="button" class="btn btn-secondary" (click)="wizard.reset()">Reset</button>
+      </div>
+    </div>
+  </wizard-step>
+</wizard>
