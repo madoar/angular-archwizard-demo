@@ -1,4 +1,4 @@
-<wizard #wizard>
+<wizard #wizard navigationMode="strict">
   <wizard-step title="Steptitle 1">
     <div class="centered-content">
       <div>
@@ -7,14 +7,13 @@
 
       <div class="btn-group">
         <button type="button" class="btn btn-secondary" nextStep>Continue</button>
-        <button type="button" class="btn btn-secondary" goToStep="2">Continue to Step 3</button>
       </div>
     </div>
   </wizard-step>
-  <wizard-step title="Steptitle 2" optionalStep>
+  <wizard-step title="Steptitle 2">
     <div class="centered-content">
       <div>
-        Content: Optional Step 2
+        Content: Step 2
       </div>
 
       <div class="btn-group">
@@ -38,7 +37,7 @@
   <wizard-completion-step title="Completion steptitle">
     <div class="centered-content">
       <div>
-        Content: Completion Step
+        Completion step content
       </div>
 
       <div class="btn-group">

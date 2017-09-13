@@ -16,8 +16,8 @@
   </wizard-step>
   <wizard-step title="Steptitle 2">
     <ng-template wizardStepTitle>
-      <span class="hidden-sm-down" style="color:red;">Steptitle 2</span>
-      <span class="hidden-md-up">Title 2</span>
+      <span class="d-none d-md-block" style="color:red;">Steptitle 2</span>
+      <span class="d-md-none">Title 2</span>
     </ng-template>
 
     <div class="centered-content">
@@ -43,7 +43,7 @@
 
       <div class="btn-group">
         <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" (click)="wizard.reset()">Reset</button>
+        <button type="button" class="btn btn-secondary" (click)="wizard.navigation.reset()">Reset</button>
       </div>
     </div>
   </wizard-step>

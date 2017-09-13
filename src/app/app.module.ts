@@ -27,6 +27,9 @@ import {WizardStepDirectivesModule} from './wizard-step-directives/wizard-step-d
 import {ResetWizardModule} from './reset-wizard/reset-wizard.module';
 import {AppRoutingModule} from './app-routing.module';
 import {CanExitEventModule} from './can-exit-event/can-exit-event.module';
+import {StrictNavigationModeModule} from './strict-navigation-mode/strict-navigation-mode.module';
+import {FreeNavigationModeModule} from './free-navigation-mode/free-navigation-mode.module';
+import {SemiStrictNavigationModeModule} from './semi-strict-navigation-mode/semi-strict-navigation-mode.module';
 
 @NgModule({
   declarations: [
@@ -59,7 +62,10 @@ import {CanExitEventModule} from './can-exit-event/can-exit-event.module';
     OptionalStepsModule,
     ArbitraryStepNavigationModule,
     WizardStepDirectivesModule,
-    ResetWizardModule
+    ResetWizardModule,
+    StrictNavigationModeModule,
+    FreeNavigationModeModule,
+    SemiStrictNavigationModeModule
   ],
   providers: [],
   bootstrap: [DemoComponent]
