@@ -30,6 +30,7 @@ import {CanExitEventModule} from './can-exit-event/can-exit-event.module';
 import {StrictNavigationModeModule} from './strict-navigation-mode/strict-navigation-mode.module';
 import {FreeNavigationModeModule} from './free-navigation-mode/free-navigation-mode.module';
 import {SemiStrictNavigationModeModule} from './semi-strict-navigation-mode/semi-strict-navigation-mode.module';
+import {CanEnterEventModule} from './can-enter-event/can-enter-event.module';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import {SemiStrictNavigationModeModule} from './semi-strict-navigation-mode/semi
     ResetWizardModule,
     StrictNavigationModeModule,
     FreeNavigationModeModule,
-    SemiStrictNavigationModeModule
+    SemiStrictNavigationModeModule,
+    CanEnterEventModule
   ],
   providers: [],
   bootstrap: [DemoComponent]

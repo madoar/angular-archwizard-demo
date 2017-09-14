@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {MovingDirection} from "ng2-archwizard/dist";
+import {Component, OnInit} from '@angular/core';
+import {MovingDirection} from 'ng2-archwizard';
 
 @Component({
   selector: 'app-can-exit-event',
@@ -29,7 +29,8 @@ export class CanExitEventComponent implements OnInit {
     }
   };
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
