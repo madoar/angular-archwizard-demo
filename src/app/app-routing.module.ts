@@ -26,6 +26,7 @@ import {StrictNavigationModeComponent} from './strict-navigation-mode/strict-nav
 import {FreeNavigationModeComponent} from './free-navigation-mode/free-navigation-mode.component';
 import {SemiStrictNavigationModeComponent} from './semi-strict-navigation-mode/semi-strict-navigation-mode.component';
 import {CanEnterEventComponent} from './can-enter-event/can-enter-event.component';
+import {DefaultWizardStepComponent} from './default-wizard-step/default-wizard-step.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -55,6 +56,7 @@ const appRoutes: Routes = [
   { path: 'navigation-mode/free', component: FreeNavigationModeComponent },
   { path: 'custom-step-titles', component: CustomStepTitlesComponent },
   { path: 'optional-steps', component: OptionalStepsComponent },
+  { path: 'default-step-index', component: DefaultWizardStepComponent },
   { path: 'arbitrary-step-navigation', component: ArbitraryStepNavigationComponent },
   { path: 'wizard-step-directives', component: WizardStepDirectivesComponent },
   { path: 'reset-wizard', component: ResetWizardComponent },
