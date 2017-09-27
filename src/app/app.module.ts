@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-import {WizardModule} from 'ng2-archwizard';
+import {ArchwizardModule} from 'ng2-archwizard';
 import {DemoComponent} from './demo/demo.component';
 import {BasicModule} from './basic/basic.module';
 import {SmallModule} from './small/small.module';
@@ -42,7 +42,6 @@ import {DefaultWizardStepModule} from './default-wizard-step/default-wizard-step
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    WizardModule,
     BasicModule,
     SmallModule,
     LargeFilledModule,

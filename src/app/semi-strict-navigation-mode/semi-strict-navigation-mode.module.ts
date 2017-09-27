@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SemiStrictNavigationModeComponent } from './semi-strict-navigation-mode.component';
-import {WizardModule} from 'ng2-archwizard';
+import {ArchwizardModule} from 'ng2-archwizard';
 
 @NgModule({
   imports: [
     CommonModule,
-    WizardModule
+    ArchwizardModule
   ],
   declarations: [SemiStrictNavigationModeComponent],
   exports: [SemiStrictNavigationModeComponent]
