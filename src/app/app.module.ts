@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-import {WizardModule} from 'ng2-archwizard';
+import {ArchwizardModule} from 'ng2-archwizard';
 import {DemoComponent} from './demo/demo.component';
 import {BasicModule} from './basic/basic.module';
 import {SmallModule} from './small/small.module';
@@ -27,6 +27,11 @@ import {WizardStepDirectivesModule} from './wizard-step-directives/wizard-step-d
 import {ResetWizardModule} from './reset-wizard/reset-wizard.module';
 import {AppRoutingModule} from './app-routing.module';
 import {CanExitEventModule} from './can-exit-event/can-exit-event.module';
+import {StrictNavigationModeModule} from './strict-navigation-mode/strict-navigation-mode.module';
+import {FreeNavigationModeModule} from './free-navigation-mode/free-navigation-mode.module';
+import {SemiStrictNavigationModeModule} from './semi-strict-navigation-mode/semi-strict-navigation-mode.module';
+import {CanEnterEventModule} from './can-enter-event/can-enter-event.module';
+import {DefaultWizardStepModule} from './default-wizard-step/default-wizard-step.module';
 
 @NgModule({
   declarations: [
@@ -37,7 +42,6 @@ import {CanExitEventModule} from './can-exit-event/can-exit-event.module';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    WizardModule,
     BasicModule,
     SmallModule,
     LargeFilledModule,
@@ -59,7 +63,12 @@ import {CanExitEventModule} from './can-exit-event/can-exit-event.module';
     OptionalStepsModule,
     ArbitraryStepNavigationModule,
     WizardStepDirectivesModule,
-    ResetWizardModule
+    ResetWizardModule,
+    StrictNavigationModeModule,
+    FreeNavigationModeModule,
+    SemiStrictNavigationModeModule,
+    CanEnterEventModule,
+    DefaultWizardStepModule
   ],
   providers: [],
   bootstrap: [DemoComponent]

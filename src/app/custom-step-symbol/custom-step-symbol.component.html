@@ -1,5 +1,5 @@
 <wizard #wizard navBarLayout="large-empty-symbols">
-  <wizard-step title="Steptitle 1" navigationSymbol="&#xf0b1;" navigationSymbolFontFamily="FontAwesome">
+  <wizard-step stepTitle="Steptitle 1" navigationSymbol="&#xf0b1;" navigationSymbolFontFamily="FontAwesome">
     <div class="centered-content">
       <div>
         Content: Step 1
@@ -10,7 +10,7 @@
       </div>
     </div>
   </wizard-step>
-  <wizard-step title="Steptitle 2" navigationSymbol="&#xf085;" navigationSymbolFontFamily="FontAwesome">
+  <wizard-step stepTitle="Steptitle 2" navigationSymbol="&#xf085;" navigationSymbolFontFamily="FontAwesome">
     <div class="centered-content">
       <div>
         Content: Step 2
@@ -22,7 +22,7 @@
       </div>
     </div>
   </wizard-step>
-  <wizard-step title="Steptitle 3" navigationSymbol="&#xf00c;" navigationSymbolFontFamily="FontAwesome">
+  <wizard-step stepTitle="Steptitle 3" navigationSymbol="&#xf00c;" navigationSymbolFontFamily="FontAwesome">
     <div class="centered-content">
       <div>
         Content: Step 3
@@ -30,7 +30,7 @@
 
       <div class="btn-group">
         <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" (click)="wizard.reset()">Reset</button>
+        <button type="button" class="btn btn-secondary" resetWizard>Reset</button>
       </div>
     </div>
   </wizard-step>

@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResetWizardComponent implements OnInit {
 
+  public resetCount = 0;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  public finalizeReset(): void {
+    this.resetCount += 1;
+  }
 }

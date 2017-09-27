@@ -22,6 +22,11 @@ import {ResetWizardComponent} from './reset-wizard/reset-wizard.component';
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {CanExitEventComponent} from './can-exit-event/can-exit-event.component';
+import {StrictNavigationModeComponent} from './strict-navigation-mode/strict-navigation-mode.component';
+import {FreeNavigationModeComponent} from './free-navigation-mode/free-navigation-mode.component';
+import {SemiStrictNavigationModeComponent} from './semi-strict-navigation-mode/semi-strict-navigation-mode.component';
+import {CanEnterEventComponent} from './can-enter-event/can-enter-event.component';
+import {DefaultWizardStepComponent} from './default-wizard-step/default-wizard-step.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -44,9 +49,14 @@ const appRoutes: Routes = [
   { path: 'completion-step/back-links', component: CompletionStepBackNavigationComponent },
   { path: 'step-event/step-enter', component: StepEnterEventComponent },
   { path: 'step-event/step-exit', component: StepExitEventComponent },
+  { path: 'step-event/can-enter', component: CanEnterEventComponent },
   { path: 'step-event/can-exit', component: CanExitEventComponent },
+  { path: 'navigation-mode/strict', component: StrictNavigationModeComponent },
+  { path: 'navigation-mode/semi-strict', component: SemiStrictNavigationModeComponent },
+  { path: 'navigation-mode/free', component: FreeNavigationModeComponent },
   { path: 'custom-step-titles', component: CustomStepTitlesComponent },
   { path: 'optional-steps', component: OptionalStepsComponent },
+  { path: 'default-step-index', component: DefaultWizardStepComponent },
   { path: 'arbitrary-step-navigation', component: ArbitraryStepNavigationComponent },
   { path: 'wizard-step-directives', component: WizardStepDirectivesComponent },
   { path: 'reset-wizard', component: ResetWizardComponent },

@@ -1,8 +1,12 @@
 <wizard #wizard>
-  <wizard-step title="Steptitle 1">
+  <wizard-step stepTitle="Steptitle 1">
     <div class="centered-content">
       <div>
         Content: Step 1
+      </div>
+
+      <div>
+        The wizard has been reset {{resetCount}} times.
       </div>
 
       <div class="btn-group">
@@ -10,14 +14,14 @@
       </div>
     </div>
   </wizard-step>
-  <wizard-step title="Steptitle 2">
+  <wizard-step stepTitle="Steptitle 2">
     <div class="centered-content">
       <div>
         Content: Step 2
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" (click)="wizard.reset()">Reset</button>
+        <button type="button" class="btn btn-secondary" resetWizard (finalize)="finalizeReset()">Reset</button>
       </div>
     </div>
   </wizard-step>
