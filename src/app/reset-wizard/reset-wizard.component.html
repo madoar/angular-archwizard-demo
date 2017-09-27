@@ -5,6 +5,10 @@
         Content: Step 1
       </div>
 
+      <div>
+        The wizard has been reset {{resetCount}} times.
+      </div>
+
       <div class="btn-group">
         <button type="button" class="btn btn-secondary" nextStep>Continue</button>
       </div>
@@ -17,7 +21,7 @@
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" (click)="wizard.navigation.reset()">Reset</button>
+        <button type="button" class="btn btn-secondary" resetWizard (finalize)="finalizeReset()">Reset</button>
       </div>
     </div>
   </wizard-step>
