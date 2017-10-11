@@ -27,6 +27,7 @@ import {FreeNavigationModeComponent} from './free-navigation-mode/free-navigatio
 import {SemiStrictNavigationModeComponent} from './semi-strict-navigation-mode/semi-strict-navigation-mode.component';
 import {CanEnterEventComponent} from './can-enter-event/can-enter-event.component';
 import {DefaultWizardStepComponent} from './default-wizard-step/default-wizard-step.component';
+import {ReversedNavigationBarComponent} from './reversed-navigation-bar/reversed-navigation-bar.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -60,6 +61,7 @@ const appRoutes: Routes = [
   { path: 'arbitrary-step-navigation', component: ArbitraryStepNavigationComponent },
   { path: 'wizard-step-directives', component: WizardStepDirectivesComponent },
   { path: 'reset-wizard', component: ResetWizardComponent },
+  { path: 'reversed-navigation-bar', component: ReversedNavigationBarComponent },
   { path: '', redirectTo: '/basic', pathMatch: 'full' }
 ];
 

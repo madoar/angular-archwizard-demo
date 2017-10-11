@@ -32,6 +32,7 @@ import {FreeNavigationModeModule} from './free-navigation-mode/free-navigation-m
 import {SemiStrictNavigationModeModule} from './semi-strict-navigation-mode/semi-strict-navigation-mode.module';
 import {CanEnterEventModule} from './can-enter-event/can-enter-event.module';
 import {DefaultWizardStepModule} from './default-wizard-step/default-wizard-step.module';
+import {ReversedNavigationBarModule} from './reversed-navigation-bar/reversed-navigation-bar.module';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import {DefaultWizardStepModule} from './default-wizard-step/default-wizard-step
     FreeNavigationModeModule,
     SemiStrictNavigationModeModule,
     CanEnterEventModule,
-    DefaultWizardStepModule
+    DefaultWizardStepModule,
+    ReversedNavigationBarModule
   ],
   providers: [],
   bootstrap: [DemoComponent]

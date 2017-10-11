@@ -1,5 +1,5 @@
-<wizard #wizard>
-  <wizard-step stepTitle="Steptitle 1" optionalStep>
+<wizard #wizard navBarDirection="right-to-left">
+  <wizard-step stepTitle="Steptitle 1">
     <div class="centered-content">
       <div>
         Content: Step 1
@@ -10,7 +10,7 @@
       </div>
     </div>
   </wizard-step>
-  <wizard-step stepTitle="Steptitle 2" selectedStep>
+  <wizard-step stepTitle="Steptitle 2">
     <div class="centered-content">
       <div>
         Content: Step 2
@@ -30,19 +30,8 @@
 
       <div class="btn-group">
         <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
-      </div>
-    </div>
-  </wizard-step>
-  <wizard-completion-step stepTitle="Completion steptitle">
-    <div class="centered-content">
-      <div>
-        Completion step content
-      </div>
-
-      <div class="btn-group">
         <button type="button" class="btn btn-secondary" resetWizard>Reset</button>
       </div>
     </div>
-  </wizard-completion-step>
+  </wizard-step>
 </wizard>
