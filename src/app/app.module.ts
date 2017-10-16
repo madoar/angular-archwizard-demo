@@ -33,7 +33,7 @@ import {SemiStrictNavigationModeModule} from './semi-strict-navigation-mode/semi
 import {CanEnterEventModule} from './can-enter-event/can-enter-event.module';
 import {DefaultWizardStepModule} from './default-wizard-step/default-wizard-step.module';
 import {ReversedNavigationBarModule} from './reversed-navigation-bar/reversed-navigation-bar.module';
-import {FixForNgforModule} from './fix-for-ngfor/fix-for-ngfor.module';
+import {WizardStepNgForModule} from './wizard-step-ngfor/wizard-step-ngfor.module';
 
 @NgModule({
   declarations: [
@@ -72,7 +72,7 @@ import {FixForNgforModule} from './fix-for-ngfor/fix-for-ngfor.module';
     CanEnterEventModule,
     DefaultWizardStepModule,
     ReversedNavigationBarModule,
-    FixForNgforModule
+    WizardStepNgForModule
   ],
   providers: [],
   bootstrap: [DemoComponent]

@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {FixForNgforComponent} from './fix-for-ngfor.component';
+import {WizardStepNgForComponent} from './wizard-step-ngfor.component';
 import {ArchwizardModule} from 'ng2-archwizard';
 
 @NgModule({
@@ -8,9 +8,9 @@ import {ArchwizardModule} from 'ng2-archwizard';
     CommonModule,
     ArchwizardModule
   ],
-  declarations: [FixForNgforComponent],
-  exports: [FixForNgforComponent]
+  declarations: [WizardStepNgForComponent],
+  exports: [WizardStepNgForComponent]
 })
 
-export class FixForNgforModule {
+export class WizardStepNgForModule {
 }

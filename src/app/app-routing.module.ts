@@ -28,7 +28,7 @@ import {SemiStrictNavigationModeComponent} from './semi-strict-navigation-mode/s
 import {CanEnterEventComponent} from './can-enter-event/can-enter-event.component';
 import {DefaultWizardStepComponent} from './default-wizard-step/default-wizard-step.component';
 import {ReversedNavigationBarComponent} from './reversed-navigation-bar/reversed-navigation-bar.component';
-import {FixForNgforComponent} from './fix-for-ngfor/fix-for-ngfor.component';
+import {WizardStepNgForComponent} from './wizard-step-ngfor/wizard-step-ngfor.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -63,7 +63,7 @@ const appRoutes: Routes = [
   { path: 'wizard-step-directives', component: WizardStepDirectivesComponent },
   { path: 'reset-wizard', component: ResetWizardComponent },
   { path: 'reversed-navigation-bar', component: ReversedNavigationBarComponent },
-  { path: 'fix-for-ngfor', component: FixForNgforComponent },
+  { path: 'wizard-step-ngfor', component: WizardStepNgForComponent },
   { path: '', redirectTo: '/basic', pathMatch: 'full' }
 ];
 
