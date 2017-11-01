@@ -1,0 +1,13 @@
+<wizard> 
+	<wizard-step stepTitle="{{wizard.header}}" *ngFor="let wizard of wizardSteps; let first = first; let last = last"> 
+		<div class="centered-content">
+			{{wizard.content}}
+			<br /><br />
+			
+			<div class="btn-group">
+				<button class="btn btn-secondary" previousStep *ngIf="!first">Previous Step</button> 
+				<button class="btn btn-secondary" nextStep *ngIf="!last">Next Step</button> 
+			</div>
+		</div>
+	</wizard-step> 
+</wizard>
