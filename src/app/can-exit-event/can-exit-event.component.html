@@ -1,5 +1,5 @@
-<wizard #wizard>
-  <wizard-step stepTitle="Steptitle 1" [canExit]="canExitStep1">
+<aw-wizard #wizard>
+  <aw-wizard-step [stepTitle]="'Steptitle 1'" [canExit]="canExitStep1">
     <div class="centered-content">
       <div>
         Content: Step 1
@@ -11,11 +11,11 @@
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 2" [canExit]="canExitStep2">
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'" [canExit]="canExitStep2">
     <div class="centered-content">
       <div>
         Content: Step 2
@@ -32,12 +32,12 @@
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 3" [canExit]="canExitStep3">
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 3'" [canExit]="canExitStep3">
     <div class="centered-content">
       <div>
         Content: Step 3
@@ -49,9 +49,9 @@
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" resetWizard>Reset</button>
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
       </div>
     </div>
-  </wizard-step>
-</wizard>
+  </aw-wizard-step>
+</aw-wizard>

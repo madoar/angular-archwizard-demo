@@ -1,5 +1,5 @@
-<wizard #wizard>
-  <wizard-step stepTitle="Steptitle 1">
+<aw-wizard #wizard>
+  <aw-wizard-step [stepTitle]="'Steptitle 1'">
     <div class="centered-content">
       <div>
         Content: Step 1
@@ -10,19 +10,19 @@
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 2">
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'">
     <div class="centered-content">
       <div>
         Content: Step 2
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" resetWizard (finalize)="finalizeReset()">Reset</button>
+        <button type="button" class="btn btn-secondary" awResetWizard (finalize)="finalizeReset()">Reset</button>
       </div>
     </div>
-  </wizard-step>
-</wizard>
+  </aw-wizard-step>
+</aw-wizard>

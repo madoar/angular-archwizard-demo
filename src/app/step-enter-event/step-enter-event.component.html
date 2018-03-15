@@ -1,37 +1,37 @@
-<wizard #wizard>
-  <wizard-step stepTitle="Steptitle 1" (stepEnter)="increaseCounter1($event)">
+<aw-wizard #wizard>
+  <aw-wizard-step [stepTitle]="'Steptitle 1'" (stepEnter)="increaseCounter1($event)">
     <div class="centered-content">
       <div>
         You've entered the first step {{counter1}} times!
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 2" (stepEnter)="increaseCounter2($event)">
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'" (stepEnter)="increaseCounter2($event)">
     <div class="centered-content">
       <div>
         You've entered the second step {{counter2}} times!
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 3" (stepEnter)="increaseCounter3($event)">
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 3'" (stepEnter)="increaseCounter3($event)">
     <div class="centered-content">
       <div>
         You've entered the third step {{counter3}} times!
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" resetWizard>Reset</button>
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
       </div>
     </div>
-  </wizard-step>
-</wizard>
+  </aw-wizard-step>
+</aw-wizard>

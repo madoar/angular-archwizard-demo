@@ -1,37 +1,37 @@
-<wizard #wizard>
-  <wizard-step stepTitle="Steptitle 1">
+<aw-wizard #wizard>
+  <aw-wizard-step [stepTitle]="'Steptitle 1'">
     <div class="centered-content">
       <div>
         Content: Step 1
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" goToStep="1">Continue</button>
+        <button type="button" class="btn btn-secondary" [awGoToStep]="{ stepIndex: 1 }">Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 2" #secondStep>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'" #secondStep>
     <div class="centered-content">
       <div>
         Content: Step 2
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" goToStep="0">Back</button>
-        <button type="button" class="btn btn-secondary" [goToStep]="{stepOffset: 1}">Continue</button>
+        <button type="button" class="btn btn-secondary" [awGoToStep]="{ stepIndex: 0 }">Back</button>
+        <button type="button" class="btn btn-secondary" [awGoToStep]="{ stepOffset: 1 }">Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 3">
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 3'">
     <div class="centered-content">
       <div>
         Content: Step 3
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" [goToStep]="secondStep">Back</button>
-        <button type="button" class="btn btn-secondary" resetWizard>Reset</button>
+        <button type="button" class="btn btn-secondary" [awGoToStep]="{ stepIndex: secondStep }">Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
       </div>
     </div>
-  </wizard-step>
-</wizard>
+  </aw-wizard-step>
+</aw-wizard>

@@ -1,37 +1,37 @@
-<wizard #wizard>
-  <wizard-step stepTitle="Steptitle 1">
+<aw-wizard #wizard>
+  <aw-wizard-step [stepTitle]="'Steptitle 1'">
     <div class="centered-content">
       <div>
         Content: Step 1
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 2">
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'">
     <div class="centered-content">
       <div>
         Content: Step 2
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-completion-step stepTitle="Completion steptitle" enableBackLinks>
+  </aw-wizard-step>
+  <aw-wizard-completion-step [stepTitle]="'Completion steptitle'" awEnableBackLinks>
     <div class="centered-content">
       <div>
         Completion step content
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" goToStep="0">Go to first step</button>
-        <button type="button" class="btn btn-secondary" previousStep>Back</button>
+        <button type="button" class="btn btn-secondary" [awGoToStep]="{ stepIndex: 0 }">Go to first step</button>
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
       </div>
     </div>
-  </wizard-completion-step>
-</wizard>
+  </aw-wizard-completion-step>
+</aw-wizard>
