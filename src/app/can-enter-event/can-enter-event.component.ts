@@ -16,9 +16,6 @@ export class CanEnterEventComponent implements OnInit {
   public canEnterStep3 = true;
 
   public canEnterStep2: (MovingDirection) => boolean = (direction) => {
-    console.log(direction);
-    console.log(this.canEnterStep2Backwards);
-    console.log(this.canEnterStep2Forwards);
     switch (direction) {
       case MovingDirection.Forwards:
         return this.canEnterStep2Forwards;
