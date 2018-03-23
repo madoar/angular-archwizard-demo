@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LargeEmptySymbolsComponent } from './large-empty-symbols.component';
-import {ArchwizardModule} from 'ng2-archwizard';
+import {ArchwizardModule} from 'angular-archwizard';
 
 @NgModule({
   imports: [

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MovingDirection} from 'ng2-archwizard';
+import {MovingDirection} from 'angular-archwizard';
 
 @Component({
   selector: 'app-step-exit-event',

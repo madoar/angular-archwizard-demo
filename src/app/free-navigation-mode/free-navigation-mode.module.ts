@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FreeNavigationModeComponent } from './free-navigation-mode.component';
-import {ArchwizardModule} from 'ng2-archwizard';
+import {ArchwizardModule} from 'angular-archwizard';
 
 @NgModule({
   imports: [

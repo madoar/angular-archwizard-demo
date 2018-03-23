@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WizardStepDirectivesComponent } from './wizard-step-directives.component';
-import {ArchwizardModule} from 'ng2-archwizard';
+import {ArchwizardModule} from 'angular-archwizard';
 import { CustomStepComponentComponent } from '../custom-step-component/custom-step-component.component';
 
 @NgModule({

@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ResetWizardComponent} from './reset-wizard.component';
-import {ArchwizardModule} from 'ng2-archwizard';
+import {ArchwizardModule} from 'angular-archwizard';
 
 @NgModule({
   imports: [
