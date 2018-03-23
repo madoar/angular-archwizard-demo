@@ -1,37 +1,37 @@
-<wizard #wizard navBarLayout="large-filled">
-  <wizard-step stepTitle="Steptitle 1">
+<aw-wizard #wizard [navBarLayout]="'large-filled'">
+  <aw-wizard-step [stepTitle]="'Steptitle 1'">
     <div class="centered-content">
       <div>
         Content: Step 1
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 2">
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'">
     <div class="centered-content">
       <div>
         Content: Step 2
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 3">
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 3'">
     <div class="centered-content">
       <div>
         Content: Step 3
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" resetWizard>Reset</button>
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
       </div>
     </div>
-  </wizard-step>
-</wizard>
+  </aw-wizard-step>
+</aw-wizard>

@@ -1,0 +1,27 @@
+.centered-content {
+  margin: auto;
+  text-align: center;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li.current div a {
+  color: violet;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li.current:after {
+  border-color: violet !important;
+  background-color: violet !important;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li div a {
+  text-transform: none;
+}
+
+.custom-css aw-wizard-step .centered-content {
+  background-color: #eeeeee;
+  color: blue;
+}
+
+.custom-css aw-wizard-step h3 {
+  text-decoration: underline;
+  color: darkblue;
+}

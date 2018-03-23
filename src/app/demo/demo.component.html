@@ -34,7 +34,8 @@
             <li data-toggle="collapse" data-target="#navBarSymbol" class="collapsed">
               <a>Navigation step symbol<span class="arrow"></span></a>
             </li>
-            <ul class="sub-menu collapse" id="navBarSymbol" [ngClass]="{ 'collapse': !isInFunction('navigation-symbol') }">
+            <ul class="sub-menu collapse" id="navBarSymbol"
+                [ngClass]="{ 'collapse': !isInFunction('navigation-symbol') }">
               <li routerLink="/navigation-symbol/basic" routerLinkActive="active">
                 <a>Basic</a>
               </li>
@@ -135,7 +136,11 @@
             </li>
 
             <li routerLink="/wizard-step-ngfor" routerLinkActive="active">
-              <a>Wizard stept with *ngFor</a>
+              <a>Wizard step with *ngFor</a>
+            </li>
+
+            <li routerLink="/custom-css" routerLinkActive="active">
+              <a>Custom CSS</a>
             </li>
           </ul>
         </div>
@@ -146,7 +151,7 @@
         <router-outlet></router-outlet>
       </div>
       <footer>
-        This demo uses ng2-archwizard version 2.1.0
+        This demo uses ng2-archwizard version 3.0.0-dev
       </footer>
     </div>
   </div>

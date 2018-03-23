@@ -1,6 +1,6 @@
-<wizard #wizard>
-  <wizard-step stepTitle="Steptitle 1">
-    <ng-template wizardStepTitle>
+<aw-wizard #wizard>
+  <aw-wizard-step>
+    <ng-template awWizardStepTitle>
       Steptitle 1
     </ng-template>
 
@@ -10,12 +10,12 @@
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 2">
-    <ng-template wizardStepTitle>
+  </aw-wizard-step>
+  <aw-wizard-step>
+    <ng-template awWizardStepTitle>
       <span class="d-none d-md-block" style="color:red;">Steptitle 2</span>
       <span class="d-md-none">Title 2</span>
     </ng-template>
@@ -26,13 +26,13 @@
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" nextStep>Continue</button>
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
       </div>
     </div>
-  </wizard-step>
-  <wizard-step stepTitle="Steptitle 3">
-    <ng-template wizardStepTitle>
+  </aw-wizard-step>
+  <aw-wizard-step>
+    <ng-template awWizardStepTitle>
       Steptitle 3
     </ng-template>
 
@@ -42,9 +42,9 @@
       </div>
 
       <div class="btn-group">
-        <button type="button" class="btn btn-secondary" previousStep>Back</button>
-        <button type="button" class="btn btn-secondary" resetWizard>Reset</button>
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
       </div>
     </div>
-  </wizard-step>
-</wizard>
+  </aw-wizard-step>
+</aw-wizard>

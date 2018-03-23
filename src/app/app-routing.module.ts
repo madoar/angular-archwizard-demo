@@ -29,6 +29,7 @@ import {CanEnterEventComponent} from './can-enter-event/can-enter-event.componen
 import {DefaultWizardStepComponent} from './default-wizard-step/default-wizard-step.component';
 import {ReversedNavigationBarComponent} from './reversed-navigation-bar/reversed-navigation-bar.component';
 import {WizardStepNgForComponent} from './wizard-step-ngfor/wizard-step-ngfor.component';
+import {CustomCssComponent} from './custom-css/custom-css.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -64,6 +65,7 @@ const appRoutes: Routes = [
   { path: 'reset-wizard', component: ResetWizardComponent },
   { path: 'reversed-navigation-bar', component: ReversedNavigationBarComponent },
   { path: 'wizard-step-ngfor', component: WizardStepNgForComponent },
+  { path: 'custom-css', component: CustomCssComponent },
   { path: '', redirectTo: '/basic', pathMatch: 'full' }
 ];
 
