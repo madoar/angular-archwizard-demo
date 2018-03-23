@@ -34,7 +34,8 @@
             <li data-toggle="collapse" data-target="#navBarSymbol" class="collapsed">
               <a>Navigation step symbol<span class="arrow"></span></a>
             </li>
-            <ul class="sub-menu collapse" id="navBarSymbol" [ngClass]="{ 'collapse': !isInFunction('navigation-symbol') }">
+            <ul class="sub-menu collapse" id="navBarSymbol"
+                [ngClass]="{ 'collapse': !isInFunction('navigation-symbol') }">
               <li routerLink="/navigation-symbol/basic" routerLinkActive="active">
                 <a>Basic</a>
               </li>
@@ -136,6 +137,10 @@
 
             <li routerLink="/wizard-step-ngfor" routerLinkActive="active">
               <a>Wizard step with *ngFor</a>
+            </li>
+
+            <li routerLink="/custom-css" routerLinkActive="active">
+              <a>Custom CSS</a>
             </li>
           </ul>
         </div>

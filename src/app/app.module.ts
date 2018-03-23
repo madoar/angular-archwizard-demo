@@ -1,8 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
-import {ArchwizardModule} from 'ng2-archwizard';
 import {DemoComponent} from './demo/demo.component';
 import {BasicModule} from './basic/basic.module';
 import {SmallModule} from './small/small.module';
@@ -34,6 +32,7 @@ import {CanEnterEventModule} from './can-enter-event/can-enter-event.module';
 import {DefaultWizardStepModule} from './default-wizard-step/default-wizard-step.module';
 import {ReversedNavigationBarModule} from './reversed-navigation-bar/reversed-navigation-bar.module';
 import {WizardStepNgForModule} from './wizard-step-ngfor/wizard-step-ngfor.module';
+import {CustomCssModule} from './custom-css/custom-css.module';
 
 @NgModule({
   declarations: [
@@ -42,7 +41,6 @@ import {WizardStepNgForModule} from './wizard-step-ngfor/wizard-step-ngfor.modul
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
     AppRoutingModule,
     BasicModule,
     SmallModule,
@@ -72,9 +70,11 @@ import {WizardStepNgForModule} from './wizard-step-ngfor/wizard-step-ngfor.modul
     CanEnterEventModule,
     DefaultWizardStepModule,
     ReversedNavigationBarModule,
-    WizardStepNgForModule
+    WizardStepNgForModule,
+    CustomCssModule
   ],
   providers: [],
   bootstrap: [DemoComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
