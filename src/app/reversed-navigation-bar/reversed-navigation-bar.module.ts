@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReversedNavigationBarComponent } from './reversed-navigation-bar.component';
-import {ArchwizardModule} from 'ng2-archwizard';
+import {ArchwizardModule} from 'angular-archwizard';
 
 @NgModule({
   imports: [
