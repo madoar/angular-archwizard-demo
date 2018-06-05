@@ -16,6 +16,7 @@ import {StepEnterEventComponent} from './step-enter-event/step-enter-event.compo
 import {StepExitEventComponent} from './step-exit-event/step-exit-event.component';
 import {CustomStepTitlesComponent} from './custom-step-titles/custom-step-titles.component';
 import {OptionalStepsComponent} from './optional-steps/optional-steps.component';
+import {OptionalLastStepComponent} from './optional-last-step/optional-last-step.component';
 import {ArbitraryStepNavigationComponent} from './arbitrary-step-navigation/arbitrary-step-navigation.component';
 import {WizardStepDirectivesComponent} from './wizard-step-directives/wizard-step-directives.component';
 import {ResetWizardComponent} from './reset-wizard/reset-wizard.component';
@@ -59,6 +60,7 @@ const appRoutes: Routes = [
   { path: 'navigation-mode/free', component: FreeNavigationModeComponent },
   { path: 'custom-step-titles', component: CustomStepTitlesComponent },
   { path: 'optional-steps', component: OptionalStepsComponent },
+  { path: 'optional-last-step', component: OptionalLastStepComponent },
   { path: 'default-step-index', component: DefaultWizardStepComponent },
   { path: 'arbitrary-step-navigation', component: ArbitraryStepNavigationComponent },
   { path: 'wizard-step-directives', component: WizardStepDirectivesComponent },

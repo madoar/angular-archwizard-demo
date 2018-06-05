@@ -20,6 +20,7 @@ import {StepEnterEventModule} from './step-enter-event/step-enter-event.module';
 import {StepExitEventModule} from './step-exit-event/step-exit-event.module';
 import {CustomStepTitlesModule} from './custom-step-titles/custom-step-titles.module';
 import {OptionalStepsModule} from './optional-steps/optional-steps.module';
+import {OptionalLastStepModule} from './optional-last-step/optional-last-step.module';
 import {ArbitraryStepNavigationModule} from './arbitrary-step-navigation/arbitrary-step-navigation.module';
 import {WizardStepDirectivesModule} from './wizard-step-directives/wizard-step-directives.module';
 import {ResetWizardModule} from './reset-wizard/reset-wizard.module';
@@ -61,6 +62,7 @@ import {CustomCssModule} from './custom-css/custom-css.module';
     CanExitEventModule,
     CustomStepTitlesModule,
     OptionalStepsModule,
+    OptionalLastStepModule,
     ArbitraryStepNavigationModule,
     WizardStepDirectivesModule,
     ResetWizardModule,
