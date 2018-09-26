@@ -3,16 +3,16 @@
   text-align: center;
 }
 
-.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li.current div a {
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li.current .label {
   color: violet;
 }
 
-.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li.current:after {
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li.current .step-indicator {
   border-color: violet !important;
   background-color: violet !important;
 }
 
-.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li div a {
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li .label {
   text-transform: none;
 }
 
