@@ -10,6 +10,7 @@ import {LargeFilledSymbolsModule} from './large-filled-symbols/large-filled-symb
 import {LargeEmptySymbolsModule} from './large-empty-symbols/large-empty-symbols.module';
 import {BasicStepSymbolModule} from './basic-step-symbol/basic-step-symbol.module';
 import {CustomStepSymbolModule} from './custom-step-symbol/custom-step-symbol.module';
+import {CustomStepSymbolTemplateModule} from './custom-step-symbol-template/custom-step-symbol-template.module';
 import {LocationTopModule} from './location-top/location-top.module';
 import {LocationBottomModule} from './location-bottom/location-bottom.module';
 import {LocationLeftModule} from './location-left/location-left.module';
@@ -50,6 +51,7 @@ import {CustomCssModule} from './custom-css/custom-css.module';
     LargeEmptySymbolsModule,
     BasicStepSymbolModule,
     CustomStepSymbolModule,
+    CustomStepSymbolTemplateModule,
     LocationTopModule,
     LocationBottomModule,
     LocationLeftModule,

@@ -6,6 +6,7 @@ import {LargeEmptySymbolsComponent} from './large-empty-symbols/large-empty-symb
 import {LargeFilledSymbolsComponent} from './large-filled-symbols/large-filled-symbols.component';
 import {BasicStepSymbolComponent} from './basic-step-symbol/basic-step-symbol.component';
 import {CustomStepSymbolComponent} from './custom-step-symbol/custom-step-symbol.component';
+import {CustomStepSymbolTemplateComponent} from './custom-step-symbol-template/custom-step-symbol-template.component';
 import {LocationBottomComponent} from './location-bottom/location-bottom.component';
 import {LocationRightComponent} from './location-right/location-right.component';
 import {LocationLeftComponent} from './location-left/location-left.component';
@@ -44,6 +45,7 @@ const appRoutes: Routes = [
   { path: 'layout/large-empty-symbols', component: LargeEmptySymbolsComponent },
   { path: 'navigation-symbol/basic', component: BasicStepSymbolComponent },
   { path: 'navigation-symbol/custom', component: CustomStepSymbolComponent },
+  { path: 'navigation-symbol/custom-template', component: CustomStepSymbolTemplateComponent },
   { path: 'navigation-location/top', component: LocationTopComponent },
   { path: 'navigation-location/left', component: LocationLeftComponent },
   { path: 'navigation-location/right', component: LocationRightComponent },

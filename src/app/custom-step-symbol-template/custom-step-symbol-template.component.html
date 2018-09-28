@@ -1,0 +1,41 @@
+<aw-wizard #wizard [navBarLayout]="'large-empty-symbols'">
+  <aw-wizard-step [stepTitle]="'Steptitle 1'">
+    <ng-template awWizardStepSymbol><i class="fa fa-search"></i></ng-template>
+    <div class="centered-content">
+      <div>
+        Content: Step 1
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'">
+    <ng-template awWizardStepSymbol><i class="fa fa-upload"></i></ng-template>
+    <div class="centered-content">
+      <div>
+        Content: Step 2
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 3'">
+    <ng-template awWizardStepSymbol><i class="fa fa-file"></i></ng-template>
+    <div class="centered-content">
+      <div>
+        Content: Step 3
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+</aw-wizard>
+
