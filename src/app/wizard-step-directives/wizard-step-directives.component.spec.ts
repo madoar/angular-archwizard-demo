@@ -4,7 +4,7 @@ import { WizardStepDirectivesComponent } from './wizard-step-directives.componen
 
 describe('WizardStepDirectivesComponent', () => {
   let component: WizardStepDirectivesComponent;
-  let fixture: ComponentFixture<aw-wizardStepDirectivesComponent>;
+  let fixture: ComponentFixture<WizardStepDirectivesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
