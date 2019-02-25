@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {CustomCssComponent} from './custom-css.component';
+import {CustomGlobalCssComponent} from './custom-global-css.component';
 import {ArchwizardModule} from 'angular-archwizard';
 
 @NgModule({
@@ -8,7 +8,7 @@ import {ArchwizardModule} from 'angular-archwizard';
     CommonModule,
     ArchwizardModule
   ],
-  declarations: [CustomCssComponent],
-  exports: [CustomCssComponent]
+  declarations: [CustomGlobalCssComponent],
+  exports: [CustomGlobalCssComponent]
 })
-export class CustomCssModule {}
+export class CustomGlobalCssModule {}

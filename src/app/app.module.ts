@@ -33,7 +33,8 @@ import {CanEnterEventModule} from './can-enter-event/can-enter-event.module';
 import {DefaultWizardStepModule} from './default-wizard-step/default-wizard-step.module';
 import {ReversedNavigationBarModule} from './reversed-navigation-bar/reversed-navigation-bar.module';
 import {WizardStepNgForModule} from './wizard-step-ngfor/wizard-step-ngfor.module';
-import {CustomCssModule} from './custom-css/custom-css.module';
+import {CustomGlobalCssModule} from './custom-global-css/custom-global-css.module';
+import {CustomStepCssModule} from './custom-step-css/custom-step-css.module';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import {CustomCssModule} from './custom-css/custom-css.module';
     DefaultWizardStepModule,
     ReversedNavigationBarModule,
     WizardStepNgForModule,
-    CustomCssModule
+    CustomGlobalCssModule,
+    CustomStepCssModule
   ],
   providers: [],
   bootstrap: [DemoComponent]

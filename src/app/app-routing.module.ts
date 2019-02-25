@@ -30,12 +30,12 @@ import {CanEnterEventComponent} from './can-enter-event/can-enter-event.componen
 import {DefaultWizardStepComponent} from './default-wizard-step/default-wizard-step.component';
 import {ReversedNavigationBarComponent} from './reversed-navigation-bar/reversed-navigation-bar.component';
 import {WizardStepNgForComponent} from './wizard-step-ngfor/wizard-step-ngfor.component';
-import {CustomCssComponent} from './custom-css/custom-css.component';
+import {CustomGlobalCssComponent} from './custom-global-css/custom-global-css.component';
+import {CustomStepCssComponent} from './custom-step-css/custom-step-css.component';
 
 /**
  * Created by marc on 09.07.17.
  */
-
 const appRoutes: Routes = [
   { path: 'basic', component: BasicComponent },
   { path: 'layout/small', component: SmallComponent },
@@ -59,6 +59,8 @@ const appRoutes: Routes = [
   { path: 'navigation-mode/strict', component: StrictNavigationModeComponent },
   { path: 'navigation-mode/semi-strict', component: SemiStrictNavigationModeComponent },
   { path: 'navigation-mode/free', component: FreeNavigationModeComponent },
+  { path: 'custom-css/global', component: CustomGlobalCssComponent },
+  { path: 'custom-css/step', component: CustomStepCssComponent },
   { path: 'custom-step-titles', component: CustomStepTitlesComponent },
   { path: 'optional-steps', component: OptionalStepsComponent },
   { path: 'default-step-index', component: DefaultWizardStepComponent },
@@ -67,10 +69,8 @@ const appRoutes: Routes = [
   { path: 'reset-wizard', component: ResetWizardComponent },
   { path: 'reversed-navigation-bar', component: ReversedNavigationBarComponent },
   { path: 'wizard-step-ngfor', component: WizardStepNgForComponent },
-  { path: 'custom-css', component: CustomCssComponent },
   { path: '', redirectTo: '/basic', pathMatch: 'full' }
 ];
-
 
 @NgModule({
   imports: [

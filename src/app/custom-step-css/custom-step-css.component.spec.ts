@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {CustomCssComponent} from './custom-css.component';
+import {CustomStepCssComponent} from './custom-step-css.component';
 
-describe('CustomCssComponent', () => {
-  let component: CustomCssComponent;
-  let fixture: ComponentFixture<CustomCssComponent>;
+describe('CustomStepCssComponent', () => {
+  let component: CustomStepCssComponent;
+  let fixture: ComponentFixture<CustomStepCssComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomCssComponent ]
+      declarations: [ CustomStepCssComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CustomCssComponent);
+    fixture = TestBed.createComponent(CustomStepCssComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

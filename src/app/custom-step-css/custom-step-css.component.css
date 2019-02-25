@@ -1,0 +1,19 @@
+.centered-content {
+  margin: auto;
+  text-align: center;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.current .label,
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.editing .label{
+  color: violet;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.current .step-indicator,
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li#customStep.editing .step-indicator {
+  border-color: violet !important;
+  background-color: violet !important;
+}
+
+.custom-css aw-wizard-navigation-bar.horizontal ul.steps-indicator li .label {
+  text-transform: none;
+}
