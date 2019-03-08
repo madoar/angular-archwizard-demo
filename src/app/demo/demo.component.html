@@ -110,6 +110,18 @@
               </li>
             </ul>
 
+            <li data-toggle="collapse" data-target="#customCss" class="collapsed">
+              <a>Custom CSS<span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu" id="customCss" [ngClass]="{ 'collapse': !isInFunction('custom-css') }">
+              <li routerLink="/custom-css/global" routerLinkActive="active">
+                <a>Custom global CSS</a>
+              </li>
+              <li routerLink="/custom-css/step" routerLinkActive="active">
+                <a>Custom step CSS</a>
+              </li>
+            </ul>
+
             <li routerLink="/custom-step-titles" routerLinkActive="active">
               <a>Custom designed step titles</a>
             </li>
@@ -140,10 +152,6 @@
 
             <li routerLink="/wizard-step-ngfor" routerLinkActive="active">
               <a>Wizard step with *ngFor</a>
-            </li>
-
-            <li routerLink="/custom-css" routerLinkActive="active">
-              <a>Custom CSS</a>
             </li>
           </ul>
         </div>
