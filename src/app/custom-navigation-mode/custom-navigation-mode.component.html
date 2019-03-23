@@ -1,0 +1,82 @@
+<p>All of the wizards below use a custom navigation mode that allows the user to return to any steps he/she already visited in any direction.  This page illustrates several options to configure a wizard with a custom navigation mode.</p>
+
+<p>Option 1: Specify a custom <code>navigationModeFactory</code> in <code>ArchwizardModule.forRoot()</code> and use a custom navigation mode name.</p>
+
+<aw-wizard [navigationMode]="'custom'">
+  <aw-wizard-step [stepTitle]="'Steptitle 1'">
+    <div class="centered-content">
+      <div>
+        Content: Step 1
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'">
+    <div class="centered-content">
+      <div>
+        Content: Step 2
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 3'">
+    <div class="centered-content">
+      <div>
+        Content: Step 3
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+</aw-wizard>
+
+<p></p>
+<p>Option 2: Pass to <code>[navigationMode]</code> a function returning a <code>NavigationMode</code>.</p>
+
+<aw-wizard [navigationMode]="getCustomNavigationMode">
+  <aw-wizard-step [stepTitle]="'Steptitle 1'">
+    <div class="centered-content">
+      <div>
+        Content: Step 1
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'">
+    <div class="centered-content">
+      <div>
+        Content: Step 2
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 3'">
+    <div class="centered-content">
+      <div>
+        Content: Step 3
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+</aw-wizard>

@@ -32,6 +32,7 @@ import {ReversedNavigationBarComponent} from './reversed-navigation-bar/reversed
 import {WizardStepNgForComponent} from './wizard-step-ngfor/wizard-step-ngfor.component';
 import {CustomGlobalCssComponent} from './custom-global-css/custom-global-css.component';
 import {CustomStepCssComponent} from './custom-step-css/custom-step-css.component';
+import { CustomNavigationModeComponent } from './custom-navigation-mode/custom-navigation-mode.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -62,6 +63,7 @@ const appRoutes: Routes = [
   { path: 'custom-css/global', component: CustomGlobalCssComponent },
   { path: 'custom-css/step', component: CustomStepCssComponent },
   { path: 'custom-step-titles', component: CustomStepTitlesComponent },
+  { path: 'custom-navigation-mode', component: CustomNavigationModeComponent },
   { path: 'optional-steps', component: OptionalStepsComponent },
   { path: 'default-step-index', component: DefaultWizardStepComponent },
   { path: 'arbitrary-step-navigation', component: ArbitraryStepNavigationComponent },
