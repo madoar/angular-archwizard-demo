@@ -3,11 +3,11 @@ import { CustomNavigationMode } from './custom-navigation-mode';
 
 export class CustomNavigationModeFactory extends BaseNavigationModeFactory {
 
-  createUnknown(wizard: WizardComponent, navigationMode: string): NavigationMode {
-    if (navigationMode === 'custom') {
+  protected createUnknown(wizard: WizardComponent, navigationModeInput: string): NavigationMode {
+    if (navigationModeInput === 'custom') {
       return new CustomNavigationMode(wizard.model);
     }
-    return super.createUnknown(wizard, navigationMode);
+    return super.createUnknown(wizard, navigationModeInput);
   }
 
 }
