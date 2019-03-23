@@ -5,7 +5,7 @@ import {CustomNavigationModeComponent} from './custom-navigation-mode.component'
 import {CustomNavigationModeFactory} from './custom-navigation-mode-factory.provider';
 
 const config: ArchwizardModuleConfig = {
-  navigationModeFactory: CustomNavigationModeFactory,
+  navigationModeFactory: new CustomNavigationModeFactory(),
 };
 
 @NgModule({
