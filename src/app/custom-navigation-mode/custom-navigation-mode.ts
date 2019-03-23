@@ -10,7 +10,8 @@ import {SemiStrictNavigationMode} from 'angular-archwizard';
  */
 export class CustomNavigationMode extends SemiStrictNavigationMode {
 
-  canTransitionToStep(destinationIndex: number) {
+  // @override
+  protected canTransitionToStep(destinationIndex: number) {
     // Works as in strict mode
     return this.wizardState.wizardSteps
         .filter((step, index) => index < destinationIndex && index !== this.wizardState.currentStepIndex)
@@ -18,7 +19,7 @@ export class CustomNavigationMode extends SemiStrictNavigationMode {
   }
 
   // @override
-  isNavigable(destinationIndex: number): boolean {
+  public isNavigable(destinationIndex: number): boolean {
 
     // allow returning to previous steps
     if (destinationIndex < this.wizardState.currentStepIndex) {
