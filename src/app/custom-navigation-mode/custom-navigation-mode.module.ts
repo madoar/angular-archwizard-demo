@@ -11,6 +11,8 @@ const config: ArchwizardModuleConfig = {
 @NgModule({
   imports: [
     CommonModule,
+    // Here we use ArchwizardModule.forRoot() to pass additional configuration and
+    // tell angular-archwizard about our CustomNavigationModeFactory.
     ArchwizardModule.forRoot(config)
   ],
   declarations: [CustomNavigationModeComponent],
