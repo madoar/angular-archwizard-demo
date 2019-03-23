@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LargeEmptySymbolsComponent } from './large-empty-symbols.component';
+import { LargeEmptySymbolsModule } from './large-empty-symbols.module';
 
 describe('LargeEmptySymbolsComponent', () => {
   let component: LargeEmptySymbolsComponent;
@@ -8,7 +9,7 @@ describe('LargeEmptySymbolsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LargeEmptySymbolsComponent ]
+      imports: [ LargeEmptySymbolsModule ]
     })
     .compileComponents();
   }));

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { StepEnterEventComponent } from './step-enter-event.component';
+import { StepEnterEventModule } from './step-enter-event.module';
 
 describe('StepEnterEventComponent', () => {
   let component: StepEnterEventComponent;
@@ -8,7 +9,7 @@ describe('StepEnterEventComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StepEnterEventComponent ]
+      imports: [ StepEnterEventModule ]
     })
     .compileComponents();
   }));

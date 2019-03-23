@@ -1,14 +1,14 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BasicComponent } from './basic.component';
+import { BasicModule } from './basic.module';
 
 describe('BasicComponent', () => {
   let component: BasicComponent;
   let fixture: ComponentFixture<BasicComponent>;
 
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ BasicComponent ]
+    TestBed.configureTestingModule({ imports: [ BasicModule ]
     })
     .compileComponents();
   }));

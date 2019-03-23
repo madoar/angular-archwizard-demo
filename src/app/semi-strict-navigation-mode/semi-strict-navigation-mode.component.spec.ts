@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SemiStrictNavigationModeComponent } from './semi-strict-navigation-mode.component';
+import { SemiStrictNavigationModeModule } from './semi-strict-navigation-mode.module';
 
 describe('SemiStrictNavigationModeComponent', () => {
   let component: SemiStrictNavigationModeComponent;
@@ -8,7 +9,7 @@ describe('SemiStrictNavigationModeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SemiStrictNavigationModeComponent ]
+      imports: [ SemiStrictNavigationModeModule ]
     })
     .compileComponents();
   }));

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CustomStepTitlesComponent } from './custom-step-titles.component';
+import { CustomStepTitlesModule } from './custom-step-titles.module';
 
 describe('CustomStepTitlesComponent', () => {
   let component: CustomStepTitlesComponent;
@@ -8,7 +9,7 @@ describe('CustomStepTitlesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomStepTitlesComponent ]
+      imports: [ CustomStepTitlesModule ]
     })
     .compileComponents();
   }));

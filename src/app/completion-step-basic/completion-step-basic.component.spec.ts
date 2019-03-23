@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CompletionStepBasicComponent } from './completion-step-basic.component';
+import { CompletionStepBasicModule } from './completion-step-basic.module';
 
 describe('CompletionStepBasicComponent', () => {
   let component: CompletionStepBasicComponent;
@@ -8,7 +9,7 @@ describe('CompletionStepBasicComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CompletionStepBasicComponent ]
+      imports: [ CompletionStepBasicModule ]
     })
     .compileComponents();
   }));

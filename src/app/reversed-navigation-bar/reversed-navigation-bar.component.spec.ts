@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ReversedNavigationBarComponent } from './reversed-navigation-bar.component';
+import { ReversedNavigationBarModule } from './reversed-navigation-bar.module';
 
 describe('ReversedNavigationBarComponent', () => {
   let component: ReversedNavigationBarComponent;
@@ -8,7 +9,7 @@ describe('ReversedNavigationBarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ReversedNavigationBarComponent ]
+      imports: [ ReversedNavigationBarModule ]
     })
     .compileComponents();
   }));

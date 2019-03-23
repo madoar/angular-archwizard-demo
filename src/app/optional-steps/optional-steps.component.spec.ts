@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OptionalStepsComponent } from './optional-steps.component';
+import { OptionalStepsModule } from './optional-steps.module';
 
 describe('OptionalStepsComponent', () => {
   let component: OptionalStepsComponent;
@@ -8,7 +9,7 @@ describe('OptionalStepsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OptionalStepsComponent ]
+      imports: [ OptionalStepsModule ]
     })
     .compileComponents();
   }));

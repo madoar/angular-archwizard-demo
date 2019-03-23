@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import {CustomGlobalCssComponent} from './custom-global-css.component';
+import { CustomGlobalCssModule } from './custom-global-css.module';
 
 describe('CustomGlobalCssComponent', () => {
   let component: CustomGlobalCssComponent;
@@ -8,7 +9,7 @@ describe('CustomGlobalCssComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomGlobalCssComponent ]
+      imports: [ CustomGlobalCssModule ]
     })
     .compileComponents();
   }));
