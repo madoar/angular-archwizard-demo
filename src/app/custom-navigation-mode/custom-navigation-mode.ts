@@ -26,7 +26,7 @@ export class CustomNavigationMode extends SemiStrictNavigationMode {
     }
 
     // Allow returning to any previously visited ("completed" steps)
-    const step = this.wizardState.wizardSteps[destinationIndex];
+    const step = this.wizardState.getStepAtIndex(destinationIndex);
     if (step && step.completed) {
       return true;
     }
