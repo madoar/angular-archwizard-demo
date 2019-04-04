@@ -5,7 +5,7 @@
   <li>Create a custom navigation mode factory.  Most likely you will need to extend the <code>BaseNavigationModeFactory</code> class provided by the library.  Alternatively, in the rare occassion when you need to implement a custom navigation mode factory completely from scratch, implement the <code>NavigationModeFactory</code> interface.</li>
   <li>In your custom navigation mode factory, override <code>createByName</code> to support a custom navigation mode name, e.g. 'custom'.</li>
   <li>In your application module, import <code>ArchwizardModule</code> as <code>ArchwizardModule.forRoot({{'{'}} navigationModeFactory: ... })</code>, passing in the <code>navigationModeFactory</code> field an instance of your custom navigation factory.</li>
-  <li>Configure a wizard component to use your custom navigation mode with <code>&lt;aw-wizard navigationModeInput="custom"&gt;</code>.</li>
+  <li>Configure a wizard component to use your custom navigation mode with <code>&lt;aw-wizard navigationMode="custom"&gt;</code>.</li>
 </ol>
 
 <aw-wizard [navigationMode]="'custom'">
@@ -47,7 +47,7 @@
 </aw-wizard>
 
 <p></p>
-<p>Option 2: Set <code>&lt;aw-wizard navigationModeInput="..."&gt;</code> to a function returning a custom <code>NavigationMode</code>.</p>
+<p>Option 2: Pass an instance of your custom navigation mode to <code>&lt;aw-wizard [navigationMode]="..."&gt;</code>.</p>
 
 <aw-wizard [navigationMode]="customNavigationMode">
   <aw-wizard-step [stepTitle]="'Steptitle 1'">
