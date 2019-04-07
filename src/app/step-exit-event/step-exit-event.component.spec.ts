@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { StepExitEventComponent } from './step-exit-event.component';
+import { StepExitEventModule } from './step-exit-event.module';
 
 describe('StepExitEventComponent', () => {
   let component: StepExitEventComponent;
@@ -8,7 +9,7 @@ describe('StepExitEventComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StepExitEventComponent ]
+      imports: [ StepExitEventModule ]
     })
     .compileComponents();
   }));

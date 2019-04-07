@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ResetWizardComponent } from './reset-wizard.component';
+import { ResetWizardModule } from './reset-wizard.module';
 
 describe('ResetWizardComponent', () => {
   let component: ResetWizardComponent;
@@ -8,7 +9,7 @@ describe('ResetWizardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResetWizardComponent ]
+      imports: [ ResetWizardModule ]
     })
     .compileComponents();
   }));

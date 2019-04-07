@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LocationBottomComponent } from './location-bottom.component';
+import { LocationBottomModule } from './location-bottom.module';
 
 describe('LocationBottomComponent', () => {
   let component: LocationBottomComponent;
@@ -8,7 +9,7 @@ describe('LocationBottomComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LocationBottomComponent ]
+      imports: [ LocationBottomModule ]
     })
     .compileComponents();
   }));

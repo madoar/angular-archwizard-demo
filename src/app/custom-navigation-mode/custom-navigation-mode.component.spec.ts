@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CustomNavigationModeComponent } from './custom-navigation-mode.component';
+import { CustomNavigationModeModule } from './custom-navigation-mode.module';
 
 describe('CustomNavigationModeComponent', () => {
   let component: CustomNavigationModeComponent;
@@ -8,7 +9,7 @@ describe('CustomNavigationModeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomNavigationModeComponent ]
+      imports: [ CustomNavigationModeModule ]
     })
     .compileComponents();
   }));
