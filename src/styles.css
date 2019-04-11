@@ -1,9 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-// Demonstrate customization of angular-archwizard color scheme
-$wz-color-default: #fff8a0;
-
-@import '../node_modules/angular-archwizard/archwizard.scss';
+@import '../node_modules/angular-archwizard/archwizard.css';
 
 html, body {
   margin: 0 auto;
