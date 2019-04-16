@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import {CustomStepCssComponent} from './custom-step-css.component';
+import { CustomStepCssModule } from './custom-step-css.module';
 
 describe('CustomStepCssComponent', () => {
   let component: CustomStepCssComponent;
@@ -8,7 +9,7 @@ describe('CustomStepCssComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomStepCssComponent ]
+      imports: [ CustomStepCssModule ]
     })
     .compileComponents();
   }));

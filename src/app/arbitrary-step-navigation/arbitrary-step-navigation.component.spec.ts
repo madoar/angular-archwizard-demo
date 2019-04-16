@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ArbitraryStepNavigationComponent } from './arbitrary-step-navigation.component';
+import { ArbitraryStepNavigationModule } from './arbitrary-step-navigation.module';
 
 describe('ArbitraryStepNavigationComponent', () => {
   let component: ArbitraryStepNavigationComponent;
@@ -8,7 +9,7 @@ describe('ArbitraryStepNavigationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArbitraryStepNavigationComponent ]
+      imports: [ ArbitraryStepNavigationModule ]
     })
     .compileComponents();
   }));

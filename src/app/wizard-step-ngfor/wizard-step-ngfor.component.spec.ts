@@ -1,20 +1,21 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FixForNgforComponent } from './fix-for-ngfor.component';
+import { WizardStepNgForComponent } from './wizard-step-ngfor.component';
+import { WizardStepNgForModule } from './wizard-step-ngfor.module';
 
-describe('FixForNgforComponent', () => {
-  let component: FixForNgforComponent;
-  let fixture: ComponentFixture<FixForNgforComponent>;
+describe('WizardStepNgForComponent', () => {
+  let component: WizardStepNgForComponent;
+  let fixture: ComponentFixture<WizardStepNgForComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FixForNgforComponent ]
+      imports: [ WizardStepNgForModule ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FixForNgforComponent);
+    fixture = TestBed.createComponent(WizardStepNgForComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

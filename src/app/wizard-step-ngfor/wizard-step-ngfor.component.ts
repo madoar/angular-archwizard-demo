@@ -1,12 +1,17 @@
 import {Component, OnInit, ChangeDetectorRef, AfterViewInit} from '@angular/core';
 
+interface WizardStepDescriptor {
+  header: string;
+  content: string;
+}
+
 @Component({
   selector: 'app-wizard-step-ngfor',
   templateUrl: './wizard-step-ngfor.component.html',
   styleUrls: ['./wizard-step-ngfor.component.css']
 })
 export class WizardStepNgForComponent implements OnInit, AfterViewInit {
-  wizardSteps: Array<Object>;
+  wizardSteps: WizardStepDescriptor[];
 
   constructor(private _changeDetectionRef: ChangeDetectorRef) {
 

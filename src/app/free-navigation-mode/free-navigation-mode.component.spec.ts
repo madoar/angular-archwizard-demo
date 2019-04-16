@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FreeNavigationModeComponent } from './free-navigation-mode.component';
+import { FreeNavigationModeModule } from './free-navigation-mode.module';
 
 describe('FreeNavigationModeComponent', () => {
   let component: FreeNavigationModeComponent;
@@ -8,7 +9,7 @@ describe('FreeNavigationModeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FreeNavigationModeComponent ]
+      imports: [ FreeNavigationModeModule ]
     })
     .compileComponents();
   }));
