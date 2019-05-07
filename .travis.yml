@@ -8,6 +8,11 @@ node_js: "10"
 addons:
   chrome: stable
 
+branches:
+  only:
+  - master
+  - develop
+
 before_install:
 - ARCHWIZARD_VERSION=$(grep '"angular-archwizard":' package.json | cut -d '"' -f4 | tr -d '[[:space:]]')
 - if [[ "$ARCHWIZARD_VERSION" == *develop ]]; then
