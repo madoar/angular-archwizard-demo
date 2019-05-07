@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CanEnterEventComponent } from './can-enter-event.component';
+import { CanEnterEventModule } from './can-enter-event.module';
 
 describe('CanEnterEventComponent', () => {
   let component: CanEnterEventComponent;
@@ -8,7 +9,7 @@ describe('CanEnterEventComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CanEnterEventComponent ]
+      imports: [ CanEnterEventModule ]
     })
     .compileComponents();
   }));

@@ -35,6 +35,7 @@ import {ReversedNavigationBarModule} from './reversed-navigation-bar/reversed-na
 import {WizardStepNgForModule} from './wizard-step-ngfor/wizard-step-ngfor.module';
 import {CustomGlobalCssModule} from './custom-global-css/custom-global-css.module';
 import {CustomStepCssModule} from './custom-step-css/custom-step-css.module';
+import {CustomNavigationModeModule} from './custom-navigation-mode/custom-navigation-mode.module';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import {CustomStepCssModule} from './custom-step-css/custom-step-css.module';
     ReversedNavigationBarModule,
     WizardStepNgForModule,
     CustomGlobalCssModule,
-    CustomStepCssModule
+    CustomStepCssModule,
+    CustomNavigationModeModule,
   ],
   providers: [],
   bootstrap: [DemoComponent]

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LargeEmptyComponent } from './large-empty.component';
+import { LargeEmptyModule } from './large-empty.module';
 
 describe('LargeEmptyComponent', () => {
   let component: LargeEmptyComponent;
@@ -8,7 +9,7 @@ describe('LargeEmptyComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LargeEmptyComponent ]
+      imports: [ LargeEmptyModule ]
     })
     .compileComponents();
   }));
