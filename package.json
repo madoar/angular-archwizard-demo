@@ -25,7 +25,7 @@
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
-    "angular-archwizard": "~4.0.0",
+    "angular-archwizard": "~4.1.0-develop",
     "rxjs": "^6.4.0",
     "tether": "^1.4.0",
     "tslib": "^1.9.0",
