@@ -12,4 +12,6 @@ if [[ "$ARCHWIZARD_VERSION" == *develop ]]; then
   npm run build
   cd $ARCHWIZARD_DEMO_DIR
   npm install --save $ARCHWIZARD_DIST_DIR
+
+  echo "Installed angular-archwizard from \"$ARCHWIZARD_REPOSITORY_URL\" to \"$ARCHWIZARD_DIST_DIR\""
 fi

@@ -16,4 +16,4 @@ branches:
 # ensure the correct version of angular-archwizard is installed
 # this version depends on the one specified in package.json
 before_install:
-- bash $TRAVIS_BUILD_DIR/scripts/install-angular-archwizard.sh
+- bash $TRAVIS_BUILD_DIR/scripts/install-angular-archwizard.sh $TRAVIS_BUILD_DIR
