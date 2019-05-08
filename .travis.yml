@@ -1,0 +1,19 @@
+sudo: required
+dist: trusty
+
+language: node_js
+
+node_js: "10"
+
+addons:
+  chrome: stable
+
+branches:
+  only:
+  - master
+  - develop
+
+# ensure the correct version of angular-archwizard is installed
+# this version depends on the one specified in package.json
+before_install:
+- bash $TRAVIS_BUILD_DIR/scripts/install-angular-archwizard.sh $TRAVIS_BUILD_DIR
