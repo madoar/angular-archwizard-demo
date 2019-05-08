@@ -1,4 +1,4 @@
-import {SemiStrictNavigationMode} from 'angular-archwizard';
+import {SemiStrictNavigationMode, WizardComponent} from 'angular-archwizard';
 
 /**
  * A custom NavigationMode
@@ -11,26 +11,25 @@ import {SemiStrictNavigationMode} from 'angular-archwizard';
 export class CustomNavigationMode extends SemiStrictNavigationMode {
 
   // @override
-  protected canTransitionToStep(destinationIndex: number) {
-
-    // Use the base implementation of `isNavigable` from `SemiStrictNavigationMode`
-    return super.isNavigable(destinationIndex);
-  }
-
-  // @override
-  public isNavigable(destinationIndex: number): boolean {
-
+  public isNavigable(wizard: WizardComponent, destinationIndex: number): boolean {
     // Allow returning to previous steps
-    if (destinationIndex < this.wizardState.currentStepIndex) {
+    if (destinationIndex < wizard.currentStepIndex) {
       return true;
     }
 
     // Allow returning to any previously visited ("completed" steps)
-    const step = this.wizardState.getStepAtIndex(destinationIndex);
+    const step = wizard.getStepAtIndex(destinationIndex);
     if (step && step.completed) {
       return true;
     }
 
     return false;
   }
+
+  // @override
+  protected canTransitionToStep(wizard: WizardComponent, destinationIndex: number) {
+    // Use the base implementation of `isNavigable` from `SemiStrictNavigationMode`
+    return super.isNavigable(wizard, destinationIndex);
+  }
+
 }

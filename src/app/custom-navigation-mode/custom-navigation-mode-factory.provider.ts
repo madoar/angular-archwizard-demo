@@ -12,7 +12,7 @@ export class CustomNavigationModeFactory extends BaseNavigationModeFactory {
 
   protected createByName(wizard: WizardComponent, navigationModeInput: string): NavigationMode {
     if (navigationModeInput === 'custom') {
-      return new CustomNavigationMode(wizard.model);
+      return new CustomNavigationMode();
     }
     return super.createByName(wizard, navigationModeInput);
   }
