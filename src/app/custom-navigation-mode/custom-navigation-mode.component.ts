@@ -14,7 +14,7 @@ export class CustomNavigationModeComponent implements OnInit {
   ngOnInit() {
   }
 
-  getCustomNavigationMode(wizard: WizardComponent): NavigationMode {
+  getCustomNavigationMode(): NavigationMode {
     return new CustomNavigationMode();
   }
 
