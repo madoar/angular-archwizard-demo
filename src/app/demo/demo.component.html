@@ -99,14 +99,14 @@
               <a>Navigation modes<span class="arrow"></span></a>
             </li>
             <ul class="sub-menu" id="navigationModes" [ngClass]="{ 'collapse': !isInFunction('navigation-mode') }">
-              <li routerLink="/navigation-mode/strict" routerLinkActive="active">
-                <a>Strict navigation mode (Default)</a>
+              <li routerLink="/navigation-mode/default" routerLinkActive="active">
+                <a>Default navigation mode</a>
               </li>
-              <li routerLink="/navigation-mode/semi-strict" routerLinkActive="active">
-                <a>Semi-strict navigation mode</a>
+              <li routerLink="/navigation-mode/configurable" routerLinkActive="active">
+                <a>Configurable navigation mode</a>
               </li>
-              <li routerLink="/navigation-mode/free" routerLinkActive="active">
-                <a>Free navigation mode</a>
+              <li routerLink="/navigation-mode/custom" routerLinkActive="active">
+                <a>Custom navigation mode</a>
               </li>
             </ul>
 
@@ -124,10 +124,6 @@
 
             <li routerLink="/custom-step-titles" routerLinkActive="active">
               <a>Custom designed step titles</a>
-            </li>
-
-            <li routerLink="/custom-navigation-mode" routerLinkActive="active">
-              <a>Custom navigation mode</a>
             </li>
 
             <li routerLink="/optional-steps" routerLinkActive="active">

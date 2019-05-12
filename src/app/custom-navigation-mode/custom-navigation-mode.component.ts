@@ -9,13 +9,11 @@ import {WizardComponent, NavigationMode} from 'angular-archwizard';
 })
 export class CustomNavigationModeComponent implements OnInit {
 
+  navigationMode = new CustomNavigationMode();
+
   constructor() { }
 
   ngOnInit() {
-  }
-
-  getCustomNavigationMode(): NavigationMode {
-    return new CustomNavigationMode();
   }
 
 }

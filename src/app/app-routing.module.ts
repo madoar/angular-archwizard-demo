@@ -23,9 +23,8 @@ import {ResetWizardComponent} from './reset-wizard/reset-wizard.component';
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {CanExitEventComponent} from './can-exit-event/can-exit-event.component';
-import {StrictNavigationModeComponent} from './strict-navigation-mode/strict-navigation-mode.component';
-import {FreeNavigationModeComponent} from './free-navigation-mode/free-navigation-mode.component';
-import {SemiStrictNavigationModeComponent} from './semi-strict-navigation-mode/semi-strict-navigation-mode.component';
+import {DefaultNavigationModeComponent} from './default-navigation-mode/default-navigation-mode.component';
+import {ConfigurableNavigationModeComponent} from './configurable-navigation-mode/configurable-navigation-mode.component';
 import {CanEnterEventComponent} from './can-enter-event/can-enter-event.component';
 import {DefaultWizardStepComponent} from './default-wizard-step/default-wizard-step.component';
 import {ReversedNavigationBarComponent} from './reversed-navigation-bar/reversed-navigation-bar.component';
@@ -57,13 +56,12 @@ const appRoutes: Routes = [
   { path: 'step-event/step-exit', component: StepExitEventComponent },
   { path: 'step-event/can-enter', component: CanEnterEventComponent },
   { path: 'step-event/can-exit', component: CanExitEventComponent },
-  { path: 'navigation-mode/strict', component: StrictNavigationModeComponent },
-  { path: 'navigation-mode/semi-strict', component: SemiStrictNavigationModeComponent },
-  { path: 'navigation-mode/free', component: FreeNavigationModeComponent },
+  { path: 'navigation-mode/default', component: DefaultNavigationModeComponent },
+  { path: 'navigation-mode/configurable', component: ConfigurableNavigationModeComponent },
+  { path: 'navigation-mode/custom', component: CustomNavigationModeComponent },
   { path: 'custom-css/global', component: CustomGlobalCssComponent },
   { path: 'custom-css/step', component: CustomStepCssComponent },
   { path: 'custom-step-titles', component: CustomStepTitlesComponent },
-  { path: 'custom-navigation-mode', component: CustomNavigationModeComponent },
   { path: 'optional-steps', component: OptionalStepsComponent },
   { path: 'default-step-index', component: DefaultWizardStepComponent },
   { path: 'arbitrary-step-navigation', component: ArbitraryStepNavigationComponent },

@@ -1,4 +1,23 @@
-<aw-wizard #wizard [navigationMode]="'free'">
+<div style="margin: 1em 0; text-align: center;">
+  <span>
+    <label for="navigateBackward" style="margin-right: 4px;">Navigate backward: </label>
+    <select id="navigateBackward" name="navigateBackward" [(ngModel)]="navigateBackward">
+      <option value="allow">Allow</option>
+      <option value="deny">Deny</option>
+    </select>
+  </span>
+
+  <span style="margin-left: 2em;">
+    <label for="navigateForward" style="margin-right: 4px;">Navigate forward: </label>
+    <select id="navigateForward" name="navigateForward" [(ngModel)]="navigateForward">
+      <option value="allow">Allow</option>
+      <option value="deny">Deny</option>
+    </select>
+  </span>
+</div>
+
+<aw-wizard #wizard
+  [awNavigationMode] [navigateBackward]="navigateBackward" [navigateForward]="navigateForward">
   <aw-wizard-step [stepTitle]="'Steptitle 1'">
     <div class="centered-content">
       <div>

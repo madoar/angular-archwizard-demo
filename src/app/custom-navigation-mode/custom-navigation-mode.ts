@@ -1,14 +1,14 @@
-import {SemiStrictNavigationMode, WizardComponent} from 'angular-archwizard';
+import {WizardComponent, ConfigurableNavigationMode} from 'angular-archwizard';
 
 /**
- * A custom NavigationMode
- *
- * Allows to navigate backward to any step (like [[StrictNavigationMode]])
- * and forward to steps the user has already visited before.
- *
- * Next and Previous buttons work as in [[StrictNavigationMode]] and [[SemiStrictNavigationMode]].
+ * A custom NavigationMode which allows to navigate backward to any step and forward to steps the user has already visited before.
  */
-export class CustomNavigationMode extends SemiStrictNavigationMode {
+// Extend ConfigurableNavigationMode for its implementation of canTransitionToStep
+export class CustomNavigationMode extends ConfigurableNavigationMode {
+
+  constructor() {
+    super('allow', 'allow');
+  }
 
   // @override
   public isNavigable(wizard: WizardComponent, destinationIndex: number): boolean {
@@ -24,12 +24,6 @@ export class CustomNavigationMode extends SemiStrictNavigationMode {
     }
 
     return false;
-  }
-
-  // @override
-  protected canTransitionToStep(wizard: WizardComponent, destinationIndex: number) {
-    // Use the base implementation of `isNavigable` from `SemiStrictNavigationMode`
-    return super.isNavigable(wizard, destinationIndex);
   }
 
 }
