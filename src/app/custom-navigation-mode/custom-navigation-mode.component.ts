@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {CustomNavigationMode} from './custom-navigation-mode';
-import {WizardComponent, NavigationMode} from 'angular-archwizard';
 
 @Component({
   selector: 'app-custom-navigation-mode',
