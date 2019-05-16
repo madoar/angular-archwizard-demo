@@ -1,0 +1,23 @@
+.centered-content {
+  margin: auto;
+  text-align: center;
+}
+
+aw-wizard.custom-step-css {
+  aw-wizard-navigation-bar.horizontal ul.steps-indicator li {
+    &#customStep {
+      &.current .label, &.editing .label {
+        color: violet;
+      }
+
+      &.current .step-indicator, &.editing .step-indicator {
+        border-color: violet !important;
+        background-color: violet !important;
+      }
+
+      .label {
+        text-transform: lowercase;
+      }
+    }
+  }
+}
