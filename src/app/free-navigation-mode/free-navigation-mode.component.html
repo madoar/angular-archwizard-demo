@@ -63,8 +63,7 @@
 <p>Note that unlike the old <code>FreeNavigationMode</code>, in this example all steps are styled as optional.
 If you absolutely require the same look and feel, you can apply custom CSS:</p>
 
-<!-- Apply a custom CSS class 'free-navigation' to enable additional styles defined globally in `src/styles.scss` -->
-<aw-wizard ngClass="free-navigation"
+<aw-wizard ngClass="custom-styling"
   [awNavigationMode] navigateBackward="allow" navigateForward="allow">
   <aw-wizard-step [stepTitle]="'Steptitle 1'" awOptionalStep>
     <div class="centered-content">
