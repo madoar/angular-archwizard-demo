@@ -36,6 +36,7 @@ import {WizardStepNgForModule} from './wizard-step-ngfor/wizard-step-ngfor.modul
 import {CustomGlobalCssModule} from './custom-global-css/custom-global-css.module';
 import {CustomStepCssModule} from './custom-step-css/custom-step-css.module';
 import {CustomNavigationModeModule} from './custom-navigation-mode/custom-navigation-mode.module';
+import {InitiallyCompletedWizardStepsModule} from './initially-completed-wizard-steps/initially-completed-wizard-steps.module';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import {CustomNavigationModeModule} from './custom-navigation-mode/custom-naviga
     FreeNavigationModeModule,
     CanEnterEventModule,
     DefaultWizardStepModule,
+    InitiallyCompletedWizardStepsModule,
     ReversedNavigationBarModule,
     WizardStepNgForModule,
     CustomGlobalCssModule,
