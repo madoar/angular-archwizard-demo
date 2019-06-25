@@ -26,9 +26,9 @@ import {WizardStepDirectivesModule} from './wizard-step-directives/wizard-step-d
 import {ResetWizardModule} from './reset-wizard/reset-wizard.module';
 import {AppRoutingModule} from './app-routing.module';
 import {CanExitEventModule} from './can-exit-event/can-exit-event.module';
-import {StrictNavigationModeModule} from './strict-navigation-mode/strict-navigation-mode.module';
+import {DefaultNavigationModeModule} from './default-navigation-mode/default-navigation-mode.module';
+import {ConfigurableNavigationModeModule} from './configurable-navigation-mode/configurable-navigation-mode.module';
 import {FreeNavigationModeModule} from './free-navigation-mode/free-navigation-mode.module';
-import {SemiStrictNavigationModeModule} from './semi-strict-navigation-mode/semi-strict-navigation-mode.module';
 import {CanEnterEventModule} from './can-enter-event/can-enter-event.module';
 import {DefaultWizardStepModule} from './default-wizard-step/default-wizard-step.module';
 import {ReversedNavigationBarModule} from './reversed-navigation-bar/reversed-navigation-bar.module';
@@ -68,9 +68,9 @@ import {CustomNavigationModeModule} from './custom-navigation-mode/custom-naviga
     ArbitraryStepNavigationModule,
     WizardStepDirectivesModule,
     ResetWizardModule,
-    StrictNavigationModeModule,
+    DefaultNavigationModeModule,
+    ConfigurableNavigationModeModule,
     FreeNavigationModeModule,
-    SemiStrictNavigationModeModule,
     CanEnterEventModule,
     DefaultWizardStepModule,
     ReversedNavigationBarModule,

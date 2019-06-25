@@ -1,5 +1,18 @@
-<aw-wizard #wizard [navigationMode]="'free'">
-  <aw-wizard-step [stepTitle]="'Steptitle 1'">
+<p style="margin: 1em 0;">
+  Angular-archwizard ≤ 4.0.0 supported <code>FreeNavigationMode</code> (<code>"navigationMode"="free"</code>).<br>
+  You can achieve the same behavior by allowing navigation in both direction and making all steps optional:
+</p>
+
+<pre><code>&lt;aw-wizard [awNavigationMode] navigateBackward="allow" navigateForward="allow"&gt;
+  &lt;aw-wizard-step awOptionalStep ...&gt;...&lt;/aw-wizard-step&gt;
+  &lt;aw-wizard-step awOptionalStep ...&gt;...&lt;/aw-wizard-step&gt;
+  &lt;aw-wizard-completion-step ...&gt;...&lt;/aw-wizard-step&gt;
+&lt;/aw-wizard&gt;
+</code></pre>
+
+<aw-wizard
+  [awNavigationMode] navigateBackward="allow" navigateForward="allow">
+  <aw-wizard-step [stepTitle]="'Steptitle 1'" awOptionalStep>
     <div class="centered-content">
       <div>
         Content: Step 1
@@ -10,7 +23,7 @@
       </div>
     </div>
   </aw-wizard-step>
-  <aw-wizard-step [stepTitle]="'Steptitle 2'">
+  <aw-wizard-step [stepTitle]="'Steptitle 2'" awOptionalStep>
     <div class="centered-content">
       <div>
         Content: Step 2
@@ -22,7 +35,60 @@
       </div>
     </div>
   </aw-wizard-step>
-  <aw-wizard-step [stepTitle]="'Steptitle 3'">
+  <aw-wizard-step [stepTitle]="'Steptitle 3'" awOptionalStep>
+    <div class="centered-content">
+      <div>
+        Content: Step 3
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-completion-step [stepTitle]="'Completion steptitle'">
+    <div class="centered-content">
+      <div>
+        Completion step content
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
+      </div>
+    </div>
+  </aw-wizard-completion-step>
+</aw-wizard>
+
+<p>Note that unlike the old <code>FreeNavigationMode</code>, in this example all steps are styled as optional.
+If you absolutely require the same look and feel, you can apply custom CSS:</p>
+
+<aw-wizard ngClass="custom-styling"
+  [awNavigationMode] navigateBackward="allow" navigateForward="allow">
+  <aw-wizard-step [stepTitle]="'Steptitle 1'" awOptionalStep>
+    <div class="centered-content">
+      <div>
+        Content: Step 1
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'" awOptionalStep>
+    <div class="centered-content">
+      <div>
+        Content: Step 2
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 3'" awOptionalStep>
     <div class="centered-content">
       <div>
         Content: Step 3

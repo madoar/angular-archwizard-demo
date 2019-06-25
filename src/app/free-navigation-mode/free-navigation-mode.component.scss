@@ -1,0 +1,12 @@
+@import '../../../node_modules/angular-archwizard/variables';
+
+.centered-content {
+  margin: auto;
+  text-align: center;
+}
+
+// Adjust the styling of wizard steps so that optional steps look like default ones.
+aw-wizard.custom-styling {
+  $wz-color-optional: $wz-color-default !global;
+  @include wz-define-layout-styles();
+}

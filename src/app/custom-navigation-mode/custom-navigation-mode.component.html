@@ -1,55 +1,5 @@
-<p>Both wizards below use a custom navigation mode that allows the user to return to any steps he/she already visited in any direction.  This page illustrates several options to configure a wizard with a custom navigation mode.</p>
-
-<p>Option 1:</p>
-<ol>
-  <li>Create a custom navigation mode factory.  Most likely you will need to extend the <code>BaseNavigationModeFactory</code> class provided by the library.  Alternatively, in the rare occassion when you need to implement a custom navigation mode factory completely from scratch, implement the <code>NavigationModeFactory</code> interface.</li>
-  <li>In your custom navigation mode factory, override <code>createByName</code> to support a custom navigation mode name, e.g. 'custom'.</li>
-  <li>In your application module, import <code>ArchwizardModule</code> as <code>ArchwizardModule.forRoot({{'{'}} navigationModeFactory: ... })</code>, passing in the <code>navigationModeFactory</code> field an instance of your custom navigation factory.</li>
-  <li>Configure a wizard component to use your custom navigation mode with <code>&lt;aw-wizard navigationModeInput="custom"&gt;</code>.</li>
-</ol>
-
-<aw-wizard [navigationMode]="'custom'">
-  <aw-wizard-step [stepTitle]="'Steptitle 1'">
-    <div class="centered-content">
-      <div>
-        Content: Step 1
-      </div>
-
-      <div class="btn-group">
-        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
-      </div>
-    </div>
-  </aw-wizard-step>
-  <aw-wizard-step [stepTitle]="'Steptitle 2'">
-    <div class="centered-content">
-      <div>
-        Content: Step 2
-      </div>
-
-      <div class="btn-group">
-        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
-        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
-      </div>
-    </div>
-  </aw-wizard-step>
-  <aw-wizard-step [stepTitle]="'Steptitle 3'">
-    <div class="centered-content">
-      <div>
-        Content: Step 3
-      </div>
-
-      <div class="btn-group">
-        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
-        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
-      </div>
-    </div>
-  </aw-wizard-step>
-</aw-wizard>
-
-<p></p>
-<p>Option 2: Set <code>&lt;aw-wizard navigationModeInput="..."&gt;</code> to a function returning a custom <code>NavigationMode</code>.</p>
-
-<aw-wizard [navigationMode]="getCustomNavigationMode()">
+<aw-wizard
+  [awNavigationMode]="navigationMode">
   <aw-wizard-step [stepTitle]="'Steptitle 1'">
     <div class="centered-content">
       <div>
