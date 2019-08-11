@@ -1,3 +1,9 @@
+<p style="margin: 1em 0;">
+  The wizard component on this page uses a custom <code>NavigationMode</code> class which allows to navigate backward to any step and forward to steps which were already visited before.
+  This <code>CustomNavigationMode</code> class only serves demonstration purposes.
+  In a real application, use <code>&lt;wizard [awNavigationMode] navigateForward="visited"&gt;...&lt;/aw-wizard&gt;</code>`.
+</p>
+
 <aw-wizard
   [awNavigationMode]="navigationMode">
   <aw-wizard-step [stepTitle]="'Steptitle 1'">
