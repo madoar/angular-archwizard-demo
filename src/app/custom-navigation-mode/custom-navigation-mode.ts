@@ -2,6 +2,8 @@ import {WizardComponent, ConfigurableNavigationMode} from 'angular-archwizard';
 
 /**
  * A custom NavigationMode which allows to navigate backward to any step and forward to steps the user has already visited before.
+ *
+ * This class only exists for demonstration purposes.  In a real application, one should simple use `[navigateForward]="visited"`.
  */
 // Extend ConfigurableNavigationMode for its implementation of canTransitionToStep
 export class CustomNavigationMode extends ConfigurableNavigationMode {
