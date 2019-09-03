@@ -6,7 +6,12 @@
 }
 
 // Adjust the styling of wizard steps so that optional steps look like default ones.
+// (in preudo-code, $wz-colors['_']['optional'] := $wz-colors['_']['default'])
+$wz-colors: map-merge($wz-colors, (
+  '_': map-merge(map-get($wz-colors, '_'), (
+    'optional': map-get(map-get($wz-colors, '_'), 'default')
+  ))
+)) !global;
 aw-wizard.custom-styling {
-  $wz-color-optional: $wz-color-default !global;
-  @include wz-define-layout-styles();
+  @include wz-define-styles();
 }
