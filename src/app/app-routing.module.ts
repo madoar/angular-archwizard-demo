@@ -34,6 +34,7 @@ import {WizardStepNgForComponent} from './wizard-step-ngfor/wizard-step-ngfor.co
 import {CustomGlobalCssComponent} from './custom-global-css/custom-global-css.component';
 import {CustomStepCssComponent} from './custom-step-css/custom-step-css.component';
 import {InitiallyCompletedWizardStepsComponent} from './initially-completed-wizard-steps/initially-completed-wizard-steps.component';
+import { SingleStepComponent } from './single-step/single-step.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -72,6 +73,7 @@ const appRoutes: Routes = [
   { path: 'wizard-step-directives', component: WizardStepDirectivesComponent },
   { path: 'reset-wizard', component: ResetWizardComponent },
   { path: 'reversed-navigation-bar', component: ReversedNavigationBarComponent },
+  { path: 'single-step', component: SingleStepComponent },
   { path: 'wizard-step-ngfor', component: WizardStepNgForComponent },
   { path: '', redirectTo: '/basic', pathMatch: 'full' }
 ];
