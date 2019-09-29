@@ -34,7 +34,8 @@ import {WizardStepNgForComponent} from './wizard-step-ngfor/wizard-step-ngfor.co
 import {CustomGlobalCssComponent} from './custom-global-css/custom-global-css.component';
 import {CustomStepCssComponent} from './custom-step-css/custom-step-css.component';
 import {InitiallyCompletedWizardStepsComponent} from './initially-completed-wizard-steps/initially-completed-wizard-steps.component';
-import { SingleStepComponent } from './single-step/single-step.component';
+import {SingleStepComponent} from './single-step/single-step.component';
+import {CustomGlobalScssComponent} from './custom-global-scss/custom-global-scss.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -63,6 +64,7 @@ const appRoutes: Routes = [
   { path: 'navigation-mode/configurable', component: ConfigurableNavigationModeComponent },
   { path: 'navigation-mode/free', component: FreeNavigationModeComponent },
   { path: 'navigation-mode/custom', component: CustomNavigationModeComponent },
+  { path: 'custom-css/global-scss', component: CustomGlobalScssComponent },
   { path: 'custom-css/global', component: CustomGlobalCssComponent },
   { path: 'custom-css/step', component: CustomStepCssComponent },
   { path: 'custom-step-titles', component: CustomStepTitlesComponent },

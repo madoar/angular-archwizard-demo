@@ -6,7 +6,7 @@
 }
 
 // Adjust the styling of wizard steps so that optional steps look like default ones.
-// (in preudo-code, $aw-colors['_']['optional'] := $aw-colors['_']['default'])
+// (in pseudo-code, $aw-colors['_']['optional'] := $aw-colors['_']['default'])
 $aw-colors: map-merge($aw-colors, (
   '_': map-merge(map-get($aw-colors, '_'), (
     'optional': map-get(map-get($aw-colors, '_'), 'default')

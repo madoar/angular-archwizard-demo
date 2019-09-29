@@ -38,6 +38,7 @@ import {CustomStepCssModule} from './custom-step-css/custom-step-css.module';
 import {CustomNavigationModeModule} from './custom-navigation-mode/custom-navigation-mode.module';
 import {InitiallyCompletedWizardStepsModule} from './initially-completed-wizard-steps/initially-completed-wizard-steps.module';
 import {SingleStepModule} from './single-step/single-step.module';
+import {CustomGlobalScssModule} from './custom-global-scss/custom-global-scss.module';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import {SingleStepModule} from './single-step/single-step.module';
     ReversedNavigationBarModule,
     WizardStepNgForModule,
     CustomGlobalCssModule,
+    CustomGlobalScssModule,
     CustomStepCssModule,
     CustomNavigationModeModule,
     SingleStepModule,

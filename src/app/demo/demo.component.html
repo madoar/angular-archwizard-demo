@@ -117,6 +117,9 @@
               <a>Custom CSS<span class="arrow"></span></a>
             </li>
             <ul class="sub-menu" id="customCss" [ngClass]="{ 'collapse': !isInFunction('custom-css') }">
+              <li routerLink="/custom-css/global-scss" routerLinkActive="active">
+                <a>Custom global SCSS</a>
+              </li>
               <li routerLink="/custom-css/global" routerLinkActive="active">
                 <a>Custom global CSS</a>
               </li>
