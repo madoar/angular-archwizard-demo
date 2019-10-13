@@ -68,6 +68,8 @@ const appRoutes: Routes = [
   { path: 'custom-css/global-scss', component: CustomGlobalScssComponent },
   { path: 'custom-css/global', component: CustomGlobalCssComponent },
   { path: 'custom-css/step', component: CustomStepCssComponent },
+  { path: 'single-step/horizontal', component: SingleStepHorizontalComponent },
+  { path: 'single-step/vertical', component: SingleStepVerticalComponent },
   { path: 'custom-step-titles', component: CustomStepTitlesComponent },
   { path: 'optional-steps', component: OptionalStepsComponent },
   { path: 'default-step-index', component: DefaultWizardStepComponent },
@@ -76,8 +78,6 @@ const appRoutes: Routes = [
   { path: 'wizard-step-directives', component: WizardStepDirectivesComponent },
   { path: 'reset-wizard', component: ResetWizardComponent },
   { path: 'reversed-navigation-bar', component: ReversedNavigationBarComponent },
-  { path: 'single-step/horizontal', component: SingleStepHorizontalComponent },
-  { path: 'single-step/vertical', component: SingleStepVerticalComponent },
   { path: 'wizard-step-ngfor', component: WizardStepNgForComponent },
   { path: '', redirectTo: '/basic', pathMatch: 'full' }
 ];

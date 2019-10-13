@@ -128,6 +128,18 @@
               </li>
             </ul>
 
+            <li data-toggle="collapse" data-target="#singleStep" class="collapsed">
+              <a>Single step<span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu" id="singleStep" [ngClass]="{ 'collapse': !isInFunction('single-step') }">
+              <li routerLink="/single-step/horizontal" routerLinkActive="active">
+                <a>Horizontal layout</a>
+              </li>
+              <li routerLink="/single-step/vertical" routerLinkActive="active">
+                <a>Vertical layout</a>
+              </li>
+            </ul>
+
             <li routerLink="/custom-step-titles" routerLinkActive="active">
               <a>Custom designed step titles</a>
             </li>
@@ -158,14 +170,6 @@
 
             <li routerLink="/reversed-navigation-bar" routerLinkActive="active">
               <a>Reversed navigation bar</a>
-            </li>
-
-            <li routerLink="/single-step/horizontal" routerLinkActive="active">
-              <a>Single step (horizontal layout)</a>
-            </li>
-
-            <li routerLink="/single-step/vertical" routerLinkActive="active">
-              <a>Single step (vertical layout)</a>
             </li>
 
             <li routerLink="/wizard-step-ngfor" routerLinkActive="active">
