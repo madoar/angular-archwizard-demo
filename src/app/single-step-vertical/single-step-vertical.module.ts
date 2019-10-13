@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SingleStepComponent } from './single-step.component';
+import { SingleStepVerticalComponent } from './single-step-vertical.component';
 import {ArchwizardModule} from 'angular-archwizard';
 
 @NgModule({
@@ -8,7 +8,7 @@ import {ArchwizardModule} from 'angular-archwizard';
     CommonModule,
     ArchwizardModule
   ],
-  declarations: [SingleStepComponent],
-  exports: [SingleStepComponent]
+  declarations: [SingleStepVerticalComponent],
+  exports: [SingleStepVerticalComponent]
 })
-export class SingleStepModule { }
+export class SingleStepVerticalModule { }

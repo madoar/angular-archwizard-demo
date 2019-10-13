@@ -37,7 +37,8 @@ import {CustomGlobalCssModule} from './custom-global-css/custom-global-css.modul
 import {CustomStepCssModule} from './custom-step-css/custom-step-css.module';
 import {CustomNavigationModeModule} from './custom-navigation-mode/custom-navigation-mode.module';
 import {InitiallyCompletedWizardStepsModule} from './initially-completed-wizard-steps/initially-completed-wizard-steps.module';
-import {SingleStepModule} from './single-step/single-step.module';
+import {SingleStepHorizontalModule} from './single-step-horizontal/single-step-horizontal.module';
+import {SingleStepVerticalModule} from './single-step-vertical/single-step-vertical.module';
 import {CustomGlobalScssModule} from './custom-global-scss/custom-global-scss.module';
 
 @NgModule({
@@ -83,7 +84,8 @@ import {CustomGlobalScssModule} from './custom-global-scss/custom-global-scss.mo
     CustomGlobalScssModule,
     CustomStepCssModule,
     CustomNavigationModeModule,
-    SingleStepModule,
+    SingleStepHorizontalModule,
+    SingleStepVerticalModule,
   ],
   providers: [],
   bootstrap: [DemoComponent]

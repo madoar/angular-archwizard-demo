@@ -34,7 +34,8 @@ import {WizardStepNgForComponent} from './wizard-step-ngfor/wizard-step-ngfor.co
 import {CustomGlobalCssComponent} from './custom-global-css/custom-global-css.component';
 import {CustomStepCssComponent} from './custom-step-css/custom-step-css.component';
 import {InitiallyCompletedWizardStepsComponent} from './initially-completed-wizard-steps/initially-completed-wizard-steps.component';
-import {SingleStepComponent} from './single-step/single-step.component';
+import {SingleStepHorizontalComponent} from './single-step-horizontal/single-step-horizontal.component';
+import {SingleStepVerticalComponent} from './single-step-vertical/single-step-vertical.component';
 import {CustomGlobalScssComponent} from './custom-global-scss/custom-global-scss.component';
 
 /**
@@ -75,7 +76,8 @@ const appRoutes: Routes = [
   { path: 'wizard-step-directives', component: WizardStepDirectivesComponent },
   { path: 'reset-wizard', component: ResetWizardComponent },
   { path: 'reversed-navigation-bar', component: ReversedNavigationBarComponent },
-  { path: 'single-step', component: SingleStepComponent },
+  { path: 'single-step/horizontal', component: SingleStepHorizontalComponent },
+  { path: 'single-step/vertical', component: SingleStepVerticalComponent },
   { path: 'wizard-step-ngfor', component: WizardStepNgForComponent },
   { path: '', redirectTo: '/basic', pathMatch: 'full' }
 ];
