@@ -34,12 +34,12 @@ import {DefaultWizardStepModule} from './default-wizard-step/default-wizard-step
 import {ReversedNavigationBarModule} from './reversed-navigation-bar/reversed-navigation-bar.module';
 import {WizardStepNgForModule} from './wizard-step-ngfor/wizard-step-ngfor.module';
 import {CustomGlobalCssModule} from './custom-global-css/custom-global-css.module';
+import {CustomGlobalScssModule} from './custom-global-scss/custom-global-scss.module';
 import {CustomStepCssModule} from './custom-step-css/custom-step-css.module';
 import {CustomNavigationModeModule} from './custom-navigation-mode/custom-navigation-mode.module';
 import {InitiallyCompletedWizardStepsModule} from './initially-completed-wizard-steps/initially-completed-wizard-steps.module';
 import {SingleStepHorizontalModule} from './single-step-horizontal/single-step-horizontal.module';
 import {SingleStepVerticalModule} from './single-step-vertical/single-step-vertical.module';
-import {CustomGlobalScssModule} from './custom-global-scss/custom-global-scss.module';
 
 @NgModule({
   declarations: [

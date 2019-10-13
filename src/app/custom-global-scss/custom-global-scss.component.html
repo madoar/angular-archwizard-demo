@@ -2,8 +2,7 @@
   <aw-wizard-step [stepTitle]="'Steptitle 1'">
     <div class="centered-content">
       <div>
-        <h3>Custom CSS</h3>
-        <p>This wizard can handle custom CSS, check the step titles in the navigation bar and the content here, it can be modified by an external custom CSS file</p>
+        Content: Step 1
       </div>
 
       <div class="btn-group">
@@ -36,3 +35,50 @@
     </div>
   </aw-wizard-step>
 </aw-wizard>
+
+<p style="margin-top: 1em;">
+  This example demonstrates the same style customizations as in the <a [routerLink]="['global-css']">Custom global CSS</a> demo.
+  However, on this page as many customizations as possible are implemented using SCSS variable overrides.
+<p>
+
+<table border="0" cellpadding="10px" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th style="width: 50%; font-weight: normal;"><a [routerLink]="['global-css']">Custom global CSS</a> demo</th>
+      <th style="width: 50%; font-weight: normal;">This page</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><pre><code>{{sampleCss}}</code></pre></td>
+      <td style="vertical-align: top;"><pre><code>{{sampleScss}}</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  At first blush, no one would prefer the second version over the first because it is so verbose.
+  But it has its advantages.
+  To summarize:
+</p>
+
+<dl style="margin-left: 1em;">
+  <dt>Pros:</dt>
+  <dd>More declarative and requires less knowledge of wizard's internal DOM structure</dd>
+  <dd>Makes it easy to completely redefine the global color theme, including all layouts, indicator styles and hover states</dd>
+  <dd>Does not require flimsy techniques such as <code>!important</code> to achieve proper application of style rules</dd>
+
+  <dt>Cons:</dt>
+  <dd>More verbose for simple cases</dd>
+  <dd>Still requires some knowledge of angular-archwizard operation and wizard states.  For an example, see <code>'editing'</code> state definitions above</dd>
+  <dd>SCSS variables do not cover everything, so for ultimate flexibility you might still need custom CSS</dd>
+</dl>
+
+<p>You might be curious about what the following code does:</p>
+
+<pre><code>{{curiousScss}}</code></pre>
+
+<p>
+  This code produces a copy of angular-archwizard styles which will only be applied to the custom wizard on this page.
+  You will not need it for defining global styles in your application.
+</p>
