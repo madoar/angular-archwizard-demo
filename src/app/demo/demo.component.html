@@ -120,8 +120,23 @@
               <li routerLink="/custom-css/global" routerLinkActive="active">
                 <a>Custom global CSS</a>
               </li>
+              <li routerLink="/custom-css/global-scss" routerLinkActive="active">
+                <a>Custom global SCSS</a>
+              </li>
               <li routerLink="/custom-css/step" routerLinkActive="active">
                 <a>Custom step CSS</a>
+              </li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#singleStep" class="collapsed">
+              <a>Single step<span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu" id="singleStep" [ngClass]="{ 'collapse': !isInFunction('single-step') }">
+              <li routerLink="/single-step/horizontal" routerLinkActive="active">
+                <a>Horizontal layout</a>
+              </li>
+              <li routerLink="/single-step/vertical" routerLinkActive="active">
+                <a>Vertical layout</a>
               </li>
             </ul>
 

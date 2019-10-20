@@ -32,8 +32,11 @@ import {DefaultWizardStepComponent} from './default-wizard-step/default-wizard-s
 import {ReversedNavigationBarComponent} from './reversed-navigation-bar/reversed-navigation-bar.component';
 import {WizardStepNgForComponent} from './wizard-step-ngfor/wizard-step-ngfor.component';
 import {CustomGlobalCssComponent} from './custom-global-css/custom-global-css.component';
+import {CustomGlobalScssComponent} from './custom-global-scss/custom-global-scss.component';
 import {CustomStepCssComponent} from './custom-step-css/custom-step-css.component';
 import {InitiallyCompletedWizardStepsComponent} from './initially-completed-wizard-steps/initially-completed-wizard-steps.component';
+import {SingleStepHorizontalComponent} from './single-step-horizontal/single-step-horizontal.component';
+import {SingleStepVerticalComponent} from './single-step-vertical/single-step-vertical.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -63,7 +66,10 @@ const appRoutes: Routes = [
   { path: 'navigation-mode/free', component: FreeNavigationModeComponent },
   { path: 'navigation-mode/custom', component: CustomNavigationModeComponent },
   { path: 'custom-css/global', component: CustomGlobalCssComponent },
+  { path: 'custom-css/global-scss', component: CustomGlobalScssComponent },
   { path: 'custom-css/step', component: CustomStepCssComponent },
+  { path: 'single-step/horizontal', component: SingleStepHorizontalComponent },
+  { path: 'single-step/vertical', component: SingleStepVerticalComponent },
   { path: 'custom-step-titles', component: CustomStepTitlesComponent },
   { path: 'optional-steps', component: OptionalStepsComponent },
   { path: 'default-step-index', component: DefaultWizardStepComponent },
