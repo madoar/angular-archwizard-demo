@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import {CustomGlobalScssComponent} from './custom-global-scss.component';
 import { CustomGlobalScssModule } from './custom-global-scss.module';
@@ -9,7 +10,10 @@ describe('CustomGlobalScssComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ CustomGlobalScssModule ]
+      imports: [
+        CustomGlobalScssModule,
+        RouterTestingModule
+      ]
     })
     .compileComponents();
   }));
