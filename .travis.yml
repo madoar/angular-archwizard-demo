@@ -3,7 +3,7 @@ dist: trusty
 
 language: node_js
 
-node_js: "10"
+node_js: "node"
 
 addons:
   chrome: stable
