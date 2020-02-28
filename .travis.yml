@@ -1,19 +1,47 @@
-sudo: required
-dist: trusty
-
 language: node_js
-
-node_js: "node"
-
-addons:
-  chrome: stable
 
 branches:
   only:
   - master
   - develop
 
+addons:
+  chrome: stable
+  firefox: latest
+
 # ensure the correct version of angular-archwizard is installed
 # this version depends on the one specified in package.json
 before_install:
 - bash $TRAVIS_BUILD_DIR/scripts/install-angular-archwizard.sh $TRAVIS_BUILD_DIR
+
+jobs:
+  include:
+    # Tests
+    - stage: Test
+      os: linux
+      dist: trusty
+      node_js: "10"
+    - stage: Test
+      os: linux
+      dist: trusty
+      node_js: "12"
+    - stage: Test
+      os: linux
+      dist: trusty
+      node_js: "node"
+    - stage: Test
+      os: osx
+      node_js: "10"
+    - stage: Test
+      os: osx
+      node_js: "12"
+    - stage: Test
+      os: osx
+      node_js: "node"
+    # Build
+    - stage: Build
+      os: linux
+      node_js: "12"
+      addons:
+        chrome: stable
+      script: npm run build
