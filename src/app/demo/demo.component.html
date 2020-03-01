@@ -1,191 +1,203 @@
-<div class="container-fluid" style="height: 100%">
-  <div class="row" style="height: 100%">
-    <div class="col-sm-2 nopadding">
-      <div class="nav-side-menu">
-        <div class="brand">angular-archwizard</div>
-        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-        <div class="menu-list">
-          <ul id="menu-content" class="menu-content collapse out">
-            <li routerLink="/basic" routerLinkActive="active">
-              <a>Basic</a>
-            </li>
+<div class="demo-page">
+  <div class="nav-side-menu">
+    <div class="brand">angular-archwizard</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <div class="menu-list">
+      <ul id="menu-content" class="menu-content collapse out">
+        <li routerLink="/basic" routerLinkActive="active">
+          <a>Basic</a>
+        </li>
 
-            <li data-toggle="collapse" data-target="#navBarLayout" class="collapsed">
-              <a>Navigation bar layout<span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu collapse" id="navBarLayout" [ngClass]="{ 'collapse': !isInFunction('layout') }">
-              <li routerLink="/layout/small" routerLinkActive="active">
-                <a>Small</a>
-              </li>
-              <li routerLink="/layout/large-filled" routerLinkActive="active">
-                <a>Large filled</a>
-              </li>
-              <li routerLink="/layout/large-empty" routerLinkActive="active">
-                <a>Large empty</a>
-              </li>
-              <li routerLink="/layout/large-filled-symbols" routerLinkActive="active">
-                <a>Large filled with Symbols</a>
-              </li>
-              <li routerLink="/layout/large-empty-symbols" routerLinkActive="active">
-                <a>Large empty with Symbols</a>
-              </li>
-            </ul>
+        <li data-toggle="collapse" data-target="#navBarLayout" class="sub-menu-label collapsed"
+          [class]="{ 'active-group': isInFunction('layout') }">
+          <a>Navigation bar layout</a>
+          <span class="arrow"></span>
+        </li>
+        <ul class="sub-menu collapse" id="navBarLayout" [class]="{ 'collapse': !isInFunction('layout') }">
+          <li routerLink="/layout/small" routerLinkActive="active">
+            <a>Small</a>
+          </li>
+          <li routerLink="/layout/large-filled" routerLinkActive="active">
+            <a>Large filled</a>
+          </li>
+          <li routerLink="/layout/large-empty" routerLinkActive="active">
+            <a>Large empty</a>
+          </li>
+          <li routerLink="/layout/large-filled-symbols" routerLinkActive="active">
+            <a>Large filled with Symbols</a>
+          </li>
+          <li routerLink="/layout/large-empty-symbols" routerLinkActive="active">
+            <a>Large empty with Symbols</a>
+          </li>
+        </ul>
 
-            <li data-toggle="collapse" data-target="#navBarSymbol" class="collapsed">
-              <a>Navigation step symbol<span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu collapse" id="navBarSymbol"
-                [ngClass]="{ 'collapse': !isInFunction('navigation-symbol') }">
-              <li routerLink="/navigation-symbol/basic" routerLinkActive="active">
-                <a>Basic</a>
-              </li>
-              <li routerLink="/navigation-symbol/custom" routerLinkActive="active">
-                <a>Custom font</a>
-              </li>
-              <li routerLink="/navigation-symbol/custom-template" routerLinkActive="active">
-                <a>Custom template</a>
-              </li>
-            </ul>
+        <li data-toggle="collapse" data-target="#navBarSymbol" class="sub-menu-label collapsed"
+          [class]="{ 'active-group': isInFunction('navigation-symbol') }">
+          <a>Navigation step symbol</a>
+          <span class="arrow"></span>
+        </li>
+        <ul class="sub-menu collapse" id="navBarSymbol" [class]="{ 'collapse': !isInFunction('navigation-symbol') }">
+          <li routerLink="/navigation-symbol/basic" routerLinkActive="active">
+            <a>Basic</a>
+          </li>
+          <li routerLink="/navigation-symbol/custom" routerLinkActive="active">
+            <a>Custom font</a>
+          </li>
+          <li routerLink="/navigation-symbol/custom-template" routerLinkActive="active">
+            <a>Custom template</a>
+          </li>
+        </ul>
 
-            <li data-toggle="collapse" data-target="#navBarLocation" class="collapsed">
-              <a>Navigation bar location<span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu" id="navBarLocation" [ngClass]="{ 'collapse': !isInFunction('navigation-location') }">
-              <li routerLink="/navigation-location/top" routerLinkActive="active">
-                <a>Top/Default</a>
-              </li>
-              <li routerLink="/navigation-location/left" routerLinkActive="active">
-                <a>Left</a>
-              </li>
-              <li routerLink="/navigation-location/right" routerLinkActive="active">
-                <a>Right</a>
-              </li>
-              <li routerLink="/navigation-location/bottom" routerLinkActive="active">
-                <a>Bottom</a>
-              </li>
-            </ul>
+        <li data-toggle="collapse" data-target="#navBarLocation" class="sub-menu-label collapsed"
+          [class]="{ 'active-group': isInFunction('navigation-location') }">
+          <a>Navigation bar location</a>
+          <span class="arrow"></span>
+        </li>
+        <ul class="sub-menu" id="navBarLocation" [class]="{ 'collapse': !isInFunction('navigation-location') }">
+          <li routerLink="/navigation-location/top" routerLinkActive="active">
+            <a>Top/Default</a>
+          </li>
+          <li routerLink="/navigation-location/left" routerLinkActive="active">
+            <a>Left</a>
+          </li>
+          <li routerLink="/navigation-location/right" routerLinkActive="active">
+            <a>Right</a>
+          </li>
+          <li routerLink="/navigation-location/bottom" routerLinkActive="active">
+            <a>Bottom</a>
+          </li>
+        </ul>
 
-            <li data-toggle="collapse" data-target="#completionStep" class="collapsed">
-              <a>Completion step<span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu" id="completionStep" [ngClass]="{ 'collapse': !isInFunction('completion-step') }">
-              <li routerLink="/completion-step/basic" routerLinkActive="active">
-                <a>Basic</a>
-              </li>
-              <li routerLink="/completion-step/back-links" routerLinkActive="active">
-                <a>Enable back navigation</a>
-              </li>
-            </ul>
+        <li data-toggle="collapse" data-target="#completionStep" class="sub-menu-label collapsed"
+          [class]="{ 'active-group': isInFunction('completion-step') }">
+          <a>Completion step</a>
+          <span class="arrow"></span>
+        </li>
+        <ul class="sub-menu" id="completionStep" [class]="{ 'collapse': !isInFunction('completion-step') }">
+          <li routerLink="/completion-step/basic" routerLinkActive="active">
+            <a>Basic</a>
+          </li>
+          <li routerLink="/completion-step/back-links" routerLinkActive="active">
+            <a>Enable back navigation</a>
+          </li>
+        </ul>
 
-            <li data-toggle="collapse" data-target="#stepOutputs" class="collapsed">
-              <a>Step events<span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu" id="stepOutputs" [ngClass]="{ 'collapse': !isInFunction('step-event') }">
-              <li routerLink="/step-event/step-enter" routerLinkActive="active">
-                <a>On entering a step</a>
-              </li>
-              <li routerLink="/step-event/step-exit" routerLinkActive="active">
-                <a>On exiting a step</a>
-              </li>
-              <li routerLink="/step-event/can-enter" routerLinkActive="active">
-                <a>Can enter a step</a>
-              </li>
-              <li routerLink="/step-event/can-exit" routerLinkActive="active">
-                <a>Can exit a step</a>
-              </li>
-            </ul>
+        <li data-toggle="collapse" data-target="#stepOutputs" class="sub-menu-label collapsed"
+          [class]="{ 'active-group': isInFunction('step-event') }">
+          <a>Step events</a>
+          <span class="arrow"></span>
+        </li>
+        <ul class="sub-menu" id="stepOutputs" [class]="{ 'collapse': !isInFunction('step-event') }">
+          <li routerLink="/step-event/step-enter" routerLinkActive="active">
+            <a>On entering a step</a>
+          </li>
+          <li routerLink="/step-event/step-exit" routerLinkActive="active">
+            <a>On exiting a step</a>
+          </li>
+          <li routerLink="/step-event/can-enter" routerLinkActive="active">
+            <a>Can enter a step</a>
+          </li>
+          <li routerLink="/step-event/can-exit" routerLinkActive="active">
+            <a>Can exit a step</a>
+          </li>
+        </ul>
 
-            <li data-toggle="collapse" data-target="#navigationModes" class="collapsed">
-              <a>Navigation modes<span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu" id="navigationModes" [ngClass]="{ 'collapse': !isInFunction('navigation-mode') }">
-              <li routerLink="/navigation-mode/default" routerLinkActive="active">
-                <a>Default navigation mode</a>
-              </li>
-              <li routerLink="/navigation-mode/configurable" routerLinkActive="active">
-                <a>Configurable navigation mode</a>
-              </li>
-              <li routerLink="/navigation-mode/free" routerLinkActive="active">
-                <a>Free navigation mode</a>
-              </li>
-              <li routerLink="/navigation-mode/custom" routerLinkActive="active">
-                <a>Custom navigation mode</a>
-              </li>
-            </ul>
+        <li data-toggle="collapse" data-target="#navigationModes" class="sub-menu-label collapsed"
+          [class]="{ 'active-group': isInFunction('navigation-mode') }">
+          <a>Navigation modes</a>
+          <span class="arrow"></span>
+        </li>
+        <ul class="sub-menu" id="navigationModes" [class]="{ 'collapse': !isInFunction('navigation-mode') }">
+          <li routerLink="/navigation-mode/default" routerLinkActive="active">
+            <a>Default navigation mode</a>
+          </li>
+          <li routerLink="/navigation-mode/configurable" routerLinkActive="active">
+            <a>Configurable navigation mode</a>
+          </li>
+          <li routerLink="/navigation-mode/free" routerLinkActive="active">
+            <a>Free navigation mode</a>
+          </li>
+          <li routerLink="/navigation-mode/custom" routerLinkActive="active">
+            <a>Custom navigation mode</a>
+          </li>
+        </ul>
 
-            <li data-toggle="collapse" data-target="#customCss" class="collapsed">
-              <a>Custom CSS<span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu" id="customCss" [ngClass]="{ 'collapse': !isInFunction('custom-css') }">
-              <li routerLink="/custom-css/global" routerLinkActive="active">
-                <a>Custom global CSS</a>
-              </li>
-              <li routerLink="/custom-css/global-scss" routerLinkActive="active">
-                <a>Custom global SCSS</a>
-              </li>
-              <li routerLink="/custom-css/step" routerLinkActive="active">
-                <a>Custom step CSS</a>
-              </li>
-            </ul>
+        <li data-toggle="collapse" data-target="#customCss" class="sub-menu-label collapsed"
+          [class]="{ 'active-group': isInFunction('custom-css') }">
+          <a>Custom CSS</a>
+          <span class="arrow"></span>
+        </li>
+        <ul class="sub-menu" id="customCss" [class]="{ 'collapse': !isInFunction('custom-css') }">
+          <li routerLink="/custom-css/global" routerLinkActive="active">
+            <a>Custom global CSS</a>
+          </li>
+          <li routerLink="/custom-css/global-scss" routerLinkActive="active">
+            <a>Custom global SCSS</a>
+          </li>
+          <li routerLink="/custom-css/step" routerLinkActive="active">
+            <a>Custom step CSS</a>
+          </li>
+        </ul>
 
-            <li data-toggle="collapse" data-target="#singleStep" class="collapsed">
-              <a>Single step<span class="arrow"></span></a>
-            </li>
-            <ul class="sub-menu" id="singleStep" [ngClass]="{ 'collapse': !isInFunction('single-step') }">
-              <li routerLink="/single-step/horizontal" routerLinkActive="active">
-                <a>Horizontal layout</a>
-              </li>
-              <li routerLink="/single-step/vertical" routerLinkActive="active">
-                <a>Vertical layout</a>
-              </li>
-            </ul>
+        <li data-toggle="collapse" data-target="#singleStep" class="sub-menu-label collapsed"
+          [class]="{ 'active-group': isInFunction('single-step') }">
+          <a>Single step</a>
+          <span class="arrow"></span>
+        </li>
+        <ul class="sub-menu" id="singleStep" [class]="{ 'collapse': !isInFunction('single-step') }">
+          <li routerLink="/single-step/horizontal" routerLinkActive="active">
+            <a>Horizontal layout</a>
+          </li>
+          <li routerLink="/single-step/vertical" routerLinkActive="active">
+            <a>Vertical layout</a>
+          </li>
+        </ul>
 
-            <li routerLink="/custom-step-titles" routerLinkActive="active">
-              <a>Custom designed step titles</a>
-            </li>
+        <li routerLink="/custom-step-titles" routerLinkActive="active">
+          <a>Custom designed step titles</a>
+        </li>
 
-            <li routerLink="/optional-steps" routerLinkActive="active">
-              <a>Optional steps</a>
-            </li>
+        <li routerLink="/optional-steps" routerLinkActive="active">
+          <a>Optional steps</a>
+        </li>
 
-            <li routerLink="/default-step-index" routerLinkActive="active">
-              <a>Default wizard step</a>
-            </li>
+        <li routerLink="/default-step-index" routerLinkActive="active">
+          <a>Default wizard step</a>
+        </li>
 
-            <li routerLink="/initially-completed-wizard-steps" routerLinkActive="active">
-              <a>Initially completed wizard steps</a>
-            </li>
+        <li routerLink="/initially-completed-wizard-steps" routerLinkActive="active">
+          <a>Initially completed wizard steps</a>
+        </li>
 
-            <li routerLink="/arbitrary-step-navigation" routerLinkActive="active">
-              <a>Navigate to an arbitrary step</a>
-            </li>
+        <li routerLink="/arbitrary-step-navigation" routerLinkActive="active">
+          <a>Navigate to an arbitrary step</a>
+        </li>
 
-            <li routerLink="/wizard-step-directives" routerLinkActive="active">
-              <a>Define wizard steps via directives</a>
-            </li>
+        <li routerLink="/wizard-step-directives" routerLinkActive="active">
+          <a>Define wizard steps via directives</a>
+        </li>
 
-            <li routerLink="/reset-wizard" routerLinkActive="active">
-              <a>Reset wizard</a>
-            </li>
+        <li routerLink="/reset-wizard" routerLinkActive="active">
+          <a>Reset wizard</a>
+        </li>
 
-            <li routerLink="/reversed-navigation-bar" routerLinkActive="active">
-              <a>Reversed navigation bar</a>
-            </li>
+        <li routerLink="/reversed-navigation-bar" routerLinkActive="active">
+          <a>Reversed navigation bar</a>
+        </li>
 
-            <li routerLink="/wizard-step-ngfor" routerLinkActive="active">
-              <a>Wizard step with *ngFor</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <li routerLink="/wizard-step-ngfor" routerLinkActive="active">
+          <a>Wizard step with *ngFor</a>
+        </li>
+      </ul>
     </div>
-    <div class="col-sm-10 fullscreen">
-      <div>
-        <router-outlet></router-outlet>
-      </div>
-      <footer>
-        This demo uses angular-archwizard version 6.0.0-develop
-      </footer>
+  </div>
+
+  <div class="fullscreen">
+    <div>
+      <router-outlet></router-outlet>
     </div>
+    <footer>
+      This demo uses angular-archwizard version 6.0.0-develop
+    </footer>
   </div>
 </div>

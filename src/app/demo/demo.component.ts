@@ -4,7 +4,7 @@ import {Router} from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './demo.component.html',
-  styleUrls: ['./demo.component.css']
+  styleUrls: ['./demo.component.scss']
 })
 export class DemoComponent implements OnInit {
   subMenuList: Array<string> = [];
@@ -14,6 +14,8 @@ export class DemoComponent implements OnInit {
 
   isInFunction(functionName: string): boolean {
     const currentUrl = this.router.url;
+
+    this.subMenuList = [];
 
     if (this.subMenuList.indexOf(currentUrl) === -1) {
       this.subMenuList.push(currentUrl)
