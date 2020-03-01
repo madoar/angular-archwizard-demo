@@ -7,6 +7,7 @@ image:
 # Command to start on workspace startup (optional)
 tasks:
 - init: bash scripts/install-angular-archwizard.sh "/workspace/angular-archwizard-demo" && npm install
+  command: npm start
 
 # Ports to expose on workspace startup (optional)
 ports:
