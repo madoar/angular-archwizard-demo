@@ -1,0 +1,49 @@
+<aw-wizard #wizard>
+  <aw-wizard-step>
+    <ng-template awWizardStepTitle let-wizardStep="wizardStep">
+      {{ wizardStep.completed ? "Steptitle 1 (✔)" : "Steptitle 1" }}
+    </ng-template>
+
+    <div class="centered-content">
+      <div>
+        Content: Step 1
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step>
+    <ng-template awWizardStepTitle let-wizardStep="wizardStep">
+      {{ wizardStep.completed ? "Steptitle 2 (✔)" : "Steptitle 2" }}
+    </ng-template>
+
+    <div class="centered-content">
+      <div>
+        Content: Step 2
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step>
+    <ng-template awWizardStepTitle let-wizardStep="wizardStep">
+      {{ wizardStep.completed ? "Steptitle 3 (✔)" : "Steptitle 3" }}
+    </ng-template>
+
+    <div class="centered-content">
+      <div>
+        Content: Step 3
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+</aw-wizard>
