@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CustomStepTitleTemplateComponent } from './custom-step-title-template.component';
 import { CustomStepTitleTemplateModule } from './custom-step-title-template.module';
 
-describe('CustomStepTitlesComponent', () => {
+describe('CustomStepTitleTemplateComponent', () => {
   let component: CustomStepTitleTemplateComponent;
   let fixture: ComponentFixture<CustomStepTitleTemplateComponent>;
 

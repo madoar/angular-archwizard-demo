@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CustomStepSymbolTemplateInjectionComponent } from './custom-step-symbol-template-injection.component';
 import { CustomStepSymbolTemplateInjectionModule } from './custom-step-symbol-template-injection.module';
 
-describe('CustomStepSymbolComponent', () => {
+describe('CustomStepSymbolTemplateInjectionComponent', () => {
   let component: CustomStepSymbolTemplateInjectionComponent;
   let fixture: ComponentFixture<CustomStepSymbolTemplateInjectionComponent>;
 
