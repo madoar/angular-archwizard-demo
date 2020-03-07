@@ -46,6 +46,23 @@
           <li routerLink="/navigation-symbol/custom-template" routerLinkActive="active">
             <a>Custom template</a>
           </li>
+          <li routerLink="/navigation-symbol/custom-template-injection" routerLinkActive="active">
+            <a>Custom template with wizard step injection</a>
+          </li>
+        </ul>
+
+        <li data-toggle="collapse" data-target="#navBarTitle" class="sub-menu-label collapsed"
+          [class]="{ 'active-group': isInFunction('navigation-title') }">
+          <a>Navigation step title</a>
+          <span class="arrow"></span>
+        </li>
+        <ul class="sub-menu collapse" id="navBarTitle" [class]="{ 'collapse': !isInFunction('navigation-title') }">
+          <li routerLink="/navigation-title/custom-template" routerLinkActive="active">
+            <a>Custom template</a>
+          </li>
+          <li routerLink="/navigation-title/custom-template-injection" routerLinkActive="active">
+            <a>Custom template with wizard step injection</a>
+          </li>
         </ul>
 
         <li data-toggle="collapse" data-target="#navBarLocation" class="sub-menu-label collapsed"
@@ -152,10 +169,6 @@
             <a>Vertical layout</a>
           </li>
         </ul>
-
-        <li routerLink="/custom-step-titles" routerLinkActive="active">
-          <a>Custom designed step titles</a>
-        </li>
 
         <li routerLink="/optional-steps" routerLinkActive="active">
           <a>Optional steps</a>

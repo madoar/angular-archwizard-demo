@@ -1,0 +1,52 @@
+<aw-wizard #wizard [navBarLayout]="'large-empty-symbols'">
+  <aw-wizard-step [stepTitle]="'Steptitle 1'">
+    <ng-template awWizardStepSymbol let-wizardStep="wizardStep">
+      <i *ngIf="!wizardStep.completed" class="fa fa-search"></i>
+      <i *ngIf="wizardStep.completed" class="fa fa-check"></i>
+    </ng-template>
+
+    <div class="centered-content">
+      <div>
+        Content: Step 1
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 2'">
+    <ng-template awWizardStepSymbol let-wizardStep="wizardStep">
+      <i *ngIf="!wizardStep.completed" class="fa fa-upload"></i>
+      <i *ngIf="wizardStep.completed" class="fa fa-check"></i>
+    </ng-template>
+
+    <div class="centered-content">
+      <div>
+        Content: Step 2
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step [stepTitle]="'Steptitle 3'">
+    <ng-template awWizardStepSymbol let-wizardStep="wizardStep">
+      <i *ngIf="!wizardStep.completed" class="fa fa-file"></i>
+      <i *ngIf="wizardStep.completed" class="fa fa-check"></i>
+    </ng-template>
+
+    <div class="centered-content">
+      <div>
+        Content: Step 3
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard>Reset</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+</aw-wizard>
