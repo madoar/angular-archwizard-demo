@@ -36,6 +36,7 @@ import { WizardStepNgForComponent } from './wizard-step-ngfor/wizard-step-ngfor.
 import { CustomGlobalCssComponent } from './custom-global-css/custom-global-css.component';
 import { CustomGlobalScssComponent } from './custom-global-scss/custom-global-scss.component';
 import { CustomStepCssComponent } from './custom-step-css/custom-step-css.component';
+import { CustomLineCssComponent } from './custom-line-css/custom-line-css.component';
 import { InitiallyCompletedWizardStepsComponent } from './initially-completed-wizard-steps/initially-completed-wizard-steps.component';
 import { SingleStepHorizontalComponent } from './single-step-horizontal/single-step-horizontal.component';
 import { SingleStepVerticalComponent } from './single-step-vertical/single-step-vertical.component';
@@ -73,6 +74,7 @@ const appRoutes: Routes = [
   { path: 'custom-css/global', component: CustomGlobalCssComponent },
   { path: 'custom-css/global-scss', component: CustomGlobalScssComponent },
   { path: 'custom-css/step', component: CustomStepCssComponent },
+  { path: 'custom-css/line', component: CustomLineCssComponent },
   { path: 'single-step/horizontal', component: SingleStepHorizontalComponent },
   { path: 'single-step/vertical', component: SingleStepVerticalComponent },
   { path: 'optional-steps', component: OptionalStepsComponent },
