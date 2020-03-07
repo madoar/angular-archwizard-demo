@@ -1,0 +1,10 @@
+.centered-content {
+  margin: auto;
+  text-align: center;
+}
+
+aw-wizard.custom-line-css {
+  aw-wizard-navigation-bar.horizontal ul.steps-indicator li.done:not(:last-child):after {
+    background-color: green !important;
+  }
+}
