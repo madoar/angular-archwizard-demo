@@ -1,6 +1,6 @@
 {
   "name": "angular-archwizard-demo",
-  "version": "6.0.0",
+  "version": "7.0.0-develop",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~9.0.5",
     "@angular/router": "~9.0.5",
     "@popperjs/core": "^2.0.6",
-    "angular-archwizard": "~6.0.0",
+    "angular-archwizard": "~7.0.0-develop",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
