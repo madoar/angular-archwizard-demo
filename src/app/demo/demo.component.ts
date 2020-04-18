@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
+
+type langDir = 'ltr' | 'rtl';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +9,15 @@ import {Router} from '@angular/router';
   styleUrls: ['./demo.component.scss']
 })
 export class DemoComponent implements OnInit {
+  @ViewChild('main') mainRef: ElementRef<HTMLElement>;
+
+  dir: langDir = 'ltr';
+
   subMenuList: Array<string> = [];
 
-  constructor(private router: Router) {
-  }
+  constructor(
+    private router: Router
+  ) {}
 
   isInFunction(functionName: string): boolean {
     const currentUrl = this.router.url;
@@ -25,5 +32,10 @@ export class DemoComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  changeDirTo(dir: langDir) {
+    this.dir = dir;
+    this.mainRef.nativeElement.dir = dir;
   }
 }

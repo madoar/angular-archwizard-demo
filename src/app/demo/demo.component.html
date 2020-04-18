@@ -209,9 +209,44 @@
   </div>
 
   <div class="fullscreen">
-    <div>
+    <nav class="navbar navbar-expand flex-column flex-md-row flex-wrap bd-navbar mb-4">
+      <a class="navbar-brand" href="#">
+          <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="32px" height="32px"/>
+          @madoar/angular-archwizard
+      </a>
+      <button class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarsExampleDefault"
+              aria-controls="navbarsExampleDefault"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+          <div dropdown class="btn-group ml-2 mr-2 mr-md-0">
+              <button class="btn btn-outline-secondary btn-sm text-uppercase dropdown-toggle" style="width: 60px;"
+                      dropdownToggle>{{dir}}</button>
+              <div *dropdownMenu class="dropdown-menu">
+                  <button (click)="changeDirTo('ltr')" class="dropdown-item btn-sm text-uppercase">ltr</button>
+                  <button (click)="changeDirTo('rtl')" class="dropdown-item btn-sm text-uppercase">rtl</button>
+              </div>
+          </div>
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <a class="github-button"
+                 href="https://github.com/madoar/angular-archwizard"
+                 data-icon="mark-github"
+                 data-size="large"
+                 data-show-count="true"
+                 aria-label="Visit madoar/angular-archwizard on GitHub">Github</a>
+          </form>
+      </div>
+    </nav>
+    <main #main>
       <router-outlet></router-outlet>
-    </div>
+    </main>
     <footer>
       This demo uses angular-archwizard version 6.0.0
     </footer>

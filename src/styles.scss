@@ -8,3 +8,19 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+[dir="rtl"] .btn-group>.btn-group:not(:last-child)>.btn,
+[dir="rtl"] .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
+[dir="rtl"] .btn-group>.btn-group:not(:first-child)>.btn,
+[dir="rtl"] .btn-group>.btn:not(:first-child) {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+}

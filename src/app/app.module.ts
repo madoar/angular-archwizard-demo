@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 import { DemoComponent } from './demo/demo.component';
 import { BasicModule } from './basic/basic.module';
 import { SmallModule } from './small/small.module';
@@ -50,8 +54,10 @@ import { SingleStepVerticalModule } from './single-step-vertical/single-step-ver
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
+    BsDropdownModule.forRoot(),
     BasicModule,
     SmallModule,
     LargeFilledModule,

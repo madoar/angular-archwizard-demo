@@ -94,7 +94,7 @@ $navbar-width: 300px;
         padding-left: 10px;
         text-decoration: none;
         color: #e1ffff;
-    
+
         i {
           width: 20px;
           padding-right: 20px;
@@ -118,7 +118,21 @@ $navbar-width: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+    main {
+      flex: 1;
+    }
+
+    .dropdown-menu {
+      max-width: 60px;
+      min-width: 60px;
+      text-align: center;
+
+      .dropdown-item {
+        padding: 2px 0;
+      }
+    }
+
   }
 }
 
