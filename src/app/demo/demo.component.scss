@@ -22,6 +22,14 @@ $navbar-width: 300px;
       font-size: 14px;
     }
 
+    .dir {
+      width: 110px;
+    }
+
+    .github {
+      width: 122px;
+    }
+
     ul, li {
       list-style: none;
       padding: 0;
@@ -122,17 +130,6 @@ $navbar-width: 300px;
     main {
       flex: 1;
     }
-
-    .dropdown-menu {
-      max-width: 60px;
-      min-width: 60px;
-      text-align: center;
-
-      .dropdown-item {
-        padding: 2px 0;
-      }
-    }
-
   }
 }
 

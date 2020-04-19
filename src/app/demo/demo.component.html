@@ -1,6 +1,33 @@
 <div class="demo-page">
   <div class="nav-side-menu">
-    <div class="brand">angular-archwizard</div>
+    <div class="brand">
+      <a class="navbar-brand text-white" href="#">
+        <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="32px" height="32px"/>
+        angular-archwizard
+      </a>
+
+      <div class="btn-group btn-group-toggle d-block mx-auto dir" data-toggle="buttons">
+        <label
+          class="btn btn-secondary"
+          (click)="changeDirTo('ltr')">
+          <input type="radio" name="options" id="ltr" checked> LTR
+        </label>
+        <label
+          class="btn btn-secondary"
+          (click)="changeDirTo('rtl')">
+          <input type="radio" name="options" id="rtl"> RTL
+        </label>
+      </div>
+
+      <form class="form mx-auto github">
+        <a class="github-button"
+           href="https://github.com/madoar/angular-archwizard"
+           data-icon="mark-github"
+           data-size="large"
+           data-show-count="true"
+           aria-label="Visit madoar/angular-archwizard on GitHub">Github</a>
+      </form>
+    </div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
     <div class="menu-list">
       <ul id="menu-content" class="menu-content collapse out">
@@ -209,41 +236,6 @@
   </div>
 
   <div class="fullscreen">
-    <nav class="navbar navbar-expand flex-column flex-md-row flex-wrap bd-navbar mb-4">
-      <a class="navbar-brand" href="#">
-          <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="32px" height="32px"/>
-          @madoar/angular-archwizard
-      </a>
-      <button class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarsExampleDefault"
-              aria-controls="navbarsExampleDefault"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse">
-          <div dropdown class="btn-group ml-2 mr-2 mr-md-0">
-              <button class="btn btn-outline-secondary btn-sm text-uppercase dropdown-toggle" style="width: 60px;"
-                      dropdownToggle>{{dir}}</button>
-              <div *dropdownMenu class="dropdown-menu">
-                  <button (click)="changeDirTo('ltr')" class="dropdown-item btn-sm text-uppercase">ltr</button>
-                  <button (click)="changeDirTo('rtl')" class="dropdown-item btn-sm text-uppercase">rtl</button>
-              </div>
-          </div>
-          <ul class="navbar-nav mr-auto">
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-              <a class="github-button"
-                 href="https://github.com/madoar/angular-archwizard"
-                 data-icon="mark-github"
-                 data-size="large"
-                 data-show-count="true"
-                 aria-label="Visit madoar/angular-archwizard on GitHub">Github</a>
-          </form>
-      </div>
-    </nav>
     <main #main>
       <router-outlet></router-outlet>
     </main>
