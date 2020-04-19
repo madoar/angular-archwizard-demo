@@ -22,9 +22,9 @@
     "@angular/router": "~9.0.5",
     "@popperjs/core": "^2.0.6",
     "angular-archwizard": "~7.0.0-develop",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "~4.3.1",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "~3.4.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
