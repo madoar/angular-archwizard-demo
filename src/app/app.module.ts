@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { DemoComponent } from './demo/demo.component';
 import { BasicModule } from './basic/basic.module';
 import { SmallModule } from './small/small.module';

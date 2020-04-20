@@ -1,12 +1,12 @@
 <div class="demo-page">
   <div class="nav-side-menu">
     <div class="brand">
-      <a class="navbar-brand text-white" href="#">
+      <a class="navbar-brand text-white mx-2" href="#">
         <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="32px" height="32px"/>
         angular-archwizard
       </a>
 
-      <div class="btn-group btn-group-toggle d-block mx-auto dir" data-toggle="buttons">
+      <div class="btn-group btn-group-toggle d-block text-center py-md-2 pb-3" data-toggle="buttons">
         <label
           class="btn btn-secondary"
           (click)="changeDirTo('ltr')">
@@ -19,14 +19,6 @@
         </label>
       </div>
 
-      <form class="form mx-auto github">
-        <a class="github-button"
-           href="https://github.com/madoar/angular-archwizard"
-           data-icon="mark-github"
-           data-size="large"
-           data-show-count="true"
-           aria-label="Visit madoar/angular-archwizard on GitHub">Github</a>
-      </form>
     </div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
     <div class="menu-list">
@@ -239,8 +231,17 @@
     <main #main>
       <router-outlet></router-outlet>
     </main>
-    <footer>
-      This demo uses angular-archwizard version 6.0.0
+    <footer class="bg-light text-center py-3 mt-4">
+      <p>This demo uses angular-archwizard version 6.0.0</p>
+
+      <form class="form mx-auto github text-center">
+        <a class="github-button"
+           href="https://github.com/madoar/angular-archwizard"
+           data-icon="mark-github"
+           data-size="large"
+           data-show-count="true"
+           aria-label="Visit madoar/angular-archwizard on GitHub">Github</a>
+      </form>
     </footer>
   </div>
 </div>

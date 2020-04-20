@@ -1,6 +1,9 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
+/**
+ * A language direction type, which can be either 'ltr' (left-to-right) or 'rtl' (right-to-left)
+ */
 type langDir = 'ltr' | 'rtl';
 
 @Component({
@@ -34,7 +37,14 @@ export class DemoComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeDirTo(dir: langDir) {
+  /**
+   * Updates the dir variable and the direction of the main html element
+   *
+   * Note: The direction change only affects the demo examples direction not all the page
+   *
+   * @param dir The updated direction. can be either 'ltr' (left-to-right) or 'rtl' (right-to-left)
+   */
+  changeDirTo(dir: langDir): void {
     this.dir = dir;
     this.mainRef.nativeElement.dir = dir;
   }
