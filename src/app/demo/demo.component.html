@@ -1,6 +1,25 @@
 <div class="demo-page">
   <div class="nav-side-menu">
-    <div class="brand">angular-archwizard</div>
+    <div class="brand">
+      <a class="navbar-brand text-white mx-2" href="#">
+        <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="32px" height="32px"/>
+        angular-archwizard
+      </a>
+
+      <div class="btn-group btn-group-toggle d-block text-center py-md-2 pb-3" data-toggle="buttons">
+        <label
+          class="btn btn-secondary active"
+          (click)="changeDirTo('ltr')">
+          <input type="radio" name="options" id="ltr" checked> LTR
+        </label>
+        <label
+          class="btn btn-secondary"
+          (click)="changeDirTo('rtl')">
+          <input type="radio" name="options" id="rtl"> RTL
+        </label>
+      </div>
+
+    </div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
     <div class="menu-list">
       <ul id="menu-content" class="menu-content collapse out">
@@ -209,11 +228,20 @@
   </div>
 
   <div class="fullscreen">
-    <div>
+    <main #main>
       <router-outlet></router-outlet>
-    </div>
-    <footer>
-      This demo uses angular-archwizard version 7.0.0-develop
+    </main>
+    <footer class="bg-light text-center py-2 mt-4">
+      <p class="my-2">This demo uses angular-archwizard version 6.0.0</p>
+
+      <form class="form mx-auto github text-center">
+        <a class="github-button"
+           href="https://github.com/madoar/angular-archwizard"
+           data-icon="mark-github"
+           data-size="large"
+           data-show-count="true"
+           aria-label="Visit madoar/angular-archwizard on GitHub">Github</a>
+      </form>
     </footer>
   </div>
 </div>

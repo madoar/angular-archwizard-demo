@@ -94,7 +94,7 @@ $navbar-width: 300px;
         padding-left: 10px;
         text-decoration: none;
         color: #e1ffff;
-    
+
         i {
           width: 20px;
           padding-right: 20px;
@@ -118,7 +118,10 @@ $navbar-width: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+    main {
+      flex: 1;
+    }
   }
 }
 
@@ -133,7 +136,6 @@ $navbar-width: 300px;
       .brand {
         text-align: left !important;
         font-size: 22px;
-        padding-left: 20px;
         line-height: 50px !important;
       }
 
