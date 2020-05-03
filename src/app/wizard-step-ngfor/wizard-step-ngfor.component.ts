@@ -1,4 +1,4 @@
-import {Component, OnInit, ChangeDetectorRef, AfterViewInit} from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 
 interface WizardStepDescriptor {
   header: string;
@@ -10,10 +10,10 @@ interface WizardStepDescriptor {
   templateUrl: './wizard-step-ngfor.component.html',
   styleUrls: ['./wizard-step-ngfor.component.css']
 })
-export class WizardStepNgForComponent implements OnInit, AfterViewInit {
-  wizardSteps: WizardStepDescriptor[];
+export class WizardStepNgForComponent implements OnInit {
+  public wizardSteps: WizardStepDescriptor[];
 
-  constructor(private _changeDetectionRef: ChangeDetectorRef) {
+  constructor() {
 
     this.wizardSteps = [
       {
@@ -33,11 +33,6 @@ export class WizardStepNgForComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-  }
-
-  ngAfterViewInit(): void {
-    // Force another change detection in order to fix the ngFor error
-    this._changeDetectionRef.detectChanges();
   }
 
 }
