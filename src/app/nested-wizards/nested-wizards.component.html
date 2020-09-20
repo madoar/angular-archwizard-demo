@@ -1,0 +1,18 @@
+<aw-wizard #outerWizard>
+  <aw-wizard-step [stepTitle]="'Steptitle 1'">
+    <app-inner-wizard #innerWizard [outerWizard]="outerWizard"></app-inner-wizard>
+  </aw-wizard-step>
+
+  <aw-wizard-step [stepTitle]="'Steptitle 2'">
+    <div class="centered-content">
+      <div>
+        Content: Step 2
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" awResetWizard (finalize)="innerWizard.reset()">Reset</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+</aw-wizard>
