@@ -1,0 +1,26 @@
+<aw-wizard #innerWizard [navBarLocation]="'left'">
+  <aw-wizard-step [stepTitle]="'Steptitle 1a'">
+    <div class="centered-content">
+      <div>
+        Content: Step 1a
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awNextStep>Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+
+  <aw-wizard-step [stepTitle]="'Steptitle 1b'">
+    <div class="centered-content">
+      <div>
+        Content: Step 1b
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" awPreviousStep>Back</button>
+        <button type="button" class="btn btn-secondary" (click)="outerNext($event)">Continue</button>
+      </div>
+    </div>
+  </aw-wizard-step>
+</aw-wizard>

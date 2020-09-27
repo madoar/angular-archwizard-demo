@@ -43,6 +43,7 @@ import { CustomNavigationModeModule } from './custom-navigation-mode/custom-navi
 import { InitiallyCompletedWizardStepsModule } from './initially-completed-wizard-steps/initially-completed-wizard-steps.module';
 import { SingleStepHorizontalModule } from './single-step-horizontal/single-step-horizontal.module';
 import { SingleStepVerticalModule } from './single-step-vertical/single-step-vertical.module';
+import { NestedWizardsModule } from './nested-wizards/nested-wizards.module';
 
 @NgModule({
   declarations: [
@@ -92,6 +93,7 @@ import { SingleStepVerticalModule } from './single-step-vertical/single-step-ver
     CustomNavigationModeModule,
     SingleStepHorizontalModule,
     SingleStepVerticalModule,
+    NestedWizardsModule
   ],
   providers: [],
   bootstrap: [DemoComponent]

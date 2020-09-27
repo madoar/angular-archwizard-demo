@@ -40,6 +40,7 @@ import { CustomLineCssComponent } from './custom-line-css/custom-line-css.compon
 import { InitiallyCompletedWizardStepsComponent } from './initially-completed-wizard-steps/initially-completed-wizard-steps.component';
 import { SingleStepHorizontalComponent } from './single-step-horizontal/single-step-horizontal.component';
 import { SingleStepVerticalComponent } from './single-step-vertical/single-step-vertical.component';
+import { NestedWizardsComponent } from './nested-wizards/nested-wizards.component';
 
 /**
  * Created by marc on 09.07.17.
@@ -85,6 +86,7 @@ const appRoutes: Routes = [
   { path: 'reset-wizard', component: ResetWizardComponent },
   { path: 'reversed-navigation-bar', component: ReversedNavigationBarComponent },
   { path: 'wizard-step-ngfor', component: WizardStepNgForComponent },
+  { path: 'nested-wizards', component: NestedWizardsComponent },
   { path: '', redirectTo: '/basic', pathMatch: 'full' }
 ];
 
