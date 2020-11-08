@@ -16,16 +16,14 @@ if [[ "$ARCHWIZARD_VERSION" == *develop ]]; then
 
   # build angular-archwizard develop branch
   cd $ARCHWIZARD_DIR
-  npm install
+  npm ci
   npm run build
 
   # install angular-archwizard
   cd $ARCHWIZARD_DEMO_DIR
-  if [ -f "package-lock.json" ]; then
-    rm package-lock.json
-  fi
-  npm install --save $ARCHWIZARD_DIST_DIR
-  npm install --package-lock-only
+  npm link $ARCHWIZARD_DIST_DIR
+  npm install
+  npm ci
 
   echo "Installed angular-archwizard from \"$ARCHWIZARD_REPOSITORY_URL\" to \"$ARCHWIZARD_DIST_DIR\""
 fi
