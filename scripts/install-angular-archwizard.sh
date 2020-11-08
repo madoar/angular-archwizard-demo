@@ -27,7 +27,5 @@ if [[ "$ARCHWIZARD_VERSION" == *develop ]]; then
   npm install --save $ARCHWIZARD_DIST_DIR
   npm install --package-lock-only
 
-  npm run build
-
   echo "Installed angular-archwizard from \"$ARCHWIZARD_REPOSITORY_URL\" to \"$ARCHWIZARD_DIST_DIR\""
 fi
