@@ -19,8 +19,5 @@
       "dom"
     ],
     "module": "es2020"
-  },
-  "angularCompilerOptions": {
-    "enableIvy": false
-  },
+  }
 }
