@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { FreeNavigationModeComponent } from './free-navigation-mode.component';
 import { FreeNavigationModeModule } from './free-navigation-mode.module';
@@ -7,7 +7,7 @@ describe('FreeNavigationModeComponent', () => {
   let component: FreeNavigationModeComponent;
   let fixture: ComponentFixture<FreeNavigationModeComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ FreeNavigationModeModule ]
     })

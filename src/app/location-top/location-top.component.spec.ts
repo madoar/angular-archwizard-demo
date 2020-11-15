@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { LocationTopComponent } from './location-top.component';
 import { LocationTopModule } from './location-top.module';
@@ -7,7 +7,7 @@ describe('LocationTopComponent', () => {
   let component: LocationTopComponent;
   let fixture: ComponentFixture<LocationTopComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ LocationTopModule ]
     })

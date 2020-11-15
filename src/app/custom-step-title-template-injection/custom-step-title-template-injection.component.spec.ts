@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { CustomStepTitleTemplateInjectionComponent } from './custom-step-title-template-injection.component';
 import { CustomStepTitleTemplateInjectionModule } from './custom-step-title-template-injection.module';
 
@@ -6,7 +6,7 @@ describe('CustomStepTitleTemplateInjectionComponent', () => {
   let component: CustomStepTitleTemplateInjectionComponent;
   let fixture: ComponentFixture<CustomStepTitleTemplateInjectionComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [CustomStepTitleTemplateInjectionModule]
     }).compileComponents();

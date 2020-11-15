@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { DefaultWizardStepComponent } from './default-wizard-step.component';
 import { DefaultWizardStepModule } from './default-wizard-step.module';
@@ -7,7 +7,7 @@ describe('DefaultWizardStepComponent', () => {
   let component: DefaultWizardStepComponent;
   let fixture: ComponentFixture<DefaultWizardStepComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ DefaultWizardStepModule ]
     })

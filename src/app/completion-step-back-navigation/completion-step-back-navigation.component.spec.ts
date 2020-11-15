@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { CompletionStepBackNavigationComponent } from './completion-step-back-navigation.component';
 import { CompletionStepBackNavigationModule } from './completion-step-back-navigation.module';
@@ -7,7 +7,7 @@ describe('CompletionStepBackNavigationComponent', () => {
   let component: CompletionStepBackNavigationComponent;
   let fixture: ComponentFixture<CompletionStepBackNavigationComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ CompletionStepBackNavigationModule ]
     })
