@@ -9,7 +9,7 @@ export class CustomStepSymbolTemplateComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

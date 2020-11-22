@@ -9,7 +9,7 @@ export class LargeFilledComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

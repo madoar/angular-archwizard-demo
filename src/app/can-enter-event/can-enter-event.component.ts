@@ -24,11 +24,11 @@ export class CanEnterEventComponent implements OnInit {
       case MovingDirection.Stay:
         return true;
     }
-  };
+  }
 
   constructor() {
   }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 }

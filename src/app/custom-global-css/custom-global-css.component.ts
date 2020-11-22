@@ -10,7 +10,7 @@ export class CustomGlobalCssComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

@@ -12,29 +12,29 @@ type langDir = 'ltr' | 'rtl';
   styleUrls: ['./demo.component.scss']
 })
 export class DemoComponent implements OnInit {
-  @ViewChild('main') mainRef: ElementRef<HTMLElement>;
+  @ViewChild('main') public mainRef: ElementRef<HTMLElement>;
 
-  dir: langDir = 'ltr';
+  public dir: langDir = 'ltr';
 
-  subMenuList: Array<string> = [];
+  public subMenuList: Array<string> = [];
 
   constructor(
     private router: Router
   ) {}
 
-  isInFunction(functionName: string): boolean {
+  public isInFunction(functionName: string): boolean {
     const currentUrl = this.router.url;
 
     this.subMenuList = [];
 
     if (this.subMenuList.indexOf(currentUrl) === -1) {
-      this.subMenuList.push(currentUrl)
+      this.subMenuList.push(currentUrl);
     }
 
     return this.subMenuList.find(url => url.startsWith('/' + functionName)) !== undefined;
   }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
   /**
@@ -44,7 +44,7 @@ export class DemoComponent implements OnInit {
    *
    * @param dir The updated direction. can be either 'ltr' (left-to-right) or 'rtl' (right-to-left)
    */
-  changeDirTo(dir: langDir): void {
+  public changeDirTo(dir: langDir): void {
     this.dir = dir;
     this.mainRef.nativeElement.dir = dir;
   }

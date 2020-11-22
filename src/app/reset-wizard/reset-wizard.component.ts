@@ -11,7 +11,7 @@ export class ResetWizardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
   public finalizeReset(): void {

@@ -9,7 +9,7 @@ export class CompletionStepBasicComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

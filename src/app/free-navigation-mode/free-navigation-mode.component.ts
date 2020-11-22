@@ -10,7 +10,7 @@ export class FreeNavigationModeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

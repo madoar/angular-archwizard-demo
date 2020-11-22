@@ -16,14 +16,14 @@ export class InnerWizardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
-  outerNext(event): void {
+  public outerNext(event): void {
     this.outerWizard.goToNextStep();
   }
 
-  reset(): void {
+  public reset(): void {
     this.innerWizard.reset();
   }
 }

@@ -8,7 +8,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class CustomGlobalScssComponent implements OnInit {
 
-  sampleCss = `
+  public sampleCss = `
 aw-wizard.custom-global-css {
   aw-wizard-navigation-bar.horizontal ul.steps-indicator li {
     &.current .step-indicator {
@@ -20,7 +20,7 @@ aw-wizard.custom-global-css {
   }
 }`.trim();
 
-  sampleScss = `
+  public sampleScss = `
 // Redefine current step styles via SCSS variables
 $aw-colors: map-merge($aw-colors, (
   '_': map-merge(map-get($aw-colors, '_'), (
@@ -50,7 +50,7 @@ aw-wizard.custom-global-scss {
   @include aw-define-styles();
 }`.trim();
 
-  curiousScss = `
+  public curiousScss = `
 aw-wizard.custom-global-scss {
   // Generate styles for our custom wizard
   @include aw-define-styles();
@@ -58,7 +58,7 @@ aw-wizard.custom-global-scss {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

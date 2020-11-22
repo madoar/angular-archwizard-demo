@@ -24,11 +24,11 @@ export class CanExitEventComponent implements OnInit {
       case MovingDirection.Stay:
         return true;
     }
-  };
+  }
 
   constructor() {
   }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 }
