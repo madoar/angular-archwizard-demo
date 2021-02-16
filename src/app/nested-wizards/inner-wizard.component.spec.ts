@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { InnerWizardComponent } from './inner-wizard.component';
 import { NestedWizardsModule } from './nested-wizards.module';
@@ -7,7 +7,7 @@ describe('InnerWizardComponent', () => {
   let component: InnerWizardComponent;
   let fixture: ComponentFixture<InnerWizardComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [NestedWizardsModule]
     }).compileComponents();

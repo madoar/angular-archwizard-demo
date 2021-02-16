@@ -9,7 +9,7 @@ export class LargeEmptySymbolsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

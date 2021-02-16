@@ -1,23 +1,25 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "downlevelIteration": true,
-    "importHelpers": true,
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "baseUrl": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "downlevelIteration": true,
     "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
     "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "module": "es2020",
     "lib": [
       "es2016",
       "dom"
-    ],
-    "module": "esnext"
+    ]
+  },
+  "angularCompilerOptions": {
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true
   }
 }

@@ -8,11 +8,11 @@ import {CustomNavigationMode} from './custom-navigation-mode';
 })
 export class CustomNavigationModeComponent implements OnInit {
 
-  navigationMode = new CustomNavigationMode();
+  public navigationMode = new CustomNavigationMode();
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

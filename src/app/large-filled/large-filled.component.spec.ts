@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { LargeFilledComponent } from './large-filled.component';
 import { LargeFilledModule } from './large-filled.module';
@@ -7,7 +7,7 @@ describe('LargeFilledComponent', () => {
   let component: LargeFilledComponent;
   let fixture: ComponentFixture<LargeFilledComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ LargeFilledModule ]
     })

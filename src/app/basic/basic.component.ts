@@ -9,7 +9,7 @@ export class BasicComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

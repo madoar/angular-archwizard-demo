@@ -9,7 +9,7 @@ export class CustomStepTitleTemplateInjectionComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

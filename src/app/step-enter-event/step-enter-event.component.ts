@@ -13,19 +13,19 @@ export class StepEnterEventComponent implements OnInit {
 
   constructor() { }
 
-  increaseCounter1(direction: MovingDirection): void {
+  public increaseCounter1(direction: MovingDirection): void {
     this.counter1 += 1;
   }
 
-  increaseCounter2(direction: MovingDirection): void {
+  public increaseCounter2(direction: MovingDirection): void {
     this.counter2 += 1;
   }
 
-  increaseCounter3(direction: MovingDirection): void {
+  public increaseCounter3(direction: MovingDirection): void {
     this.counter3 += 1;
   }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

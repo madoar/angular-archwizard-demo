@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import {CustomGlobalCssComponent} from './custom-global-css.component';
 import { CustomGlobalCssModule } from './custom-global-css.module';
@@ -7,7 +7,7 @@ describe('CustomGlobalCssComponent', () => {
   let component: CustomGlobalCssComponent;
   let fixture: ComponentFixture<CustomGlobalCssComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ CustomGlobalCssModule ]
     })

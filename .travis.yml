@@ -27,9 +27,6 @@ jobs:
       os: linux
       node_js: "14"      
     - stage: Test
-      os: linux
-      node_js: "node"
-    - stage: Test
       os: osx
       node_js: "10"
     - stage: Test
@@ -38,9 +35,6 @@ jobs:
     - stage: Test
       os: osx
       node_js: "14"      
-    - stage: Test
-      os: osx
-      node_js: "node"
     # Build
     - stage: Build
       os: linux

@@ -16,7 +16,7 @@ if [[ "$ARCHWIZARD_VERSION" == *develop ]]; then
 
   # build angular-archwizard develop branch
   cd $ARCHWIZARD_DIR
-  npm install
+  npm ci
   npm run build
 
   # install angular-archwizard

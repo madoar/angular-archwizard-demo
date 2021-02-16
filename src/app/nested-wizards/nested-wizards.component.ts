@@ -8,6 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class NestedWizardsComponent implements OnInit {
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 }

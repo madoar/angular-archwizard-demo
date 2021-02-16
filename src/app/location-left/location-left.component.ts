@@ -9,7 +9,7 @@ export class LocationLeftComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

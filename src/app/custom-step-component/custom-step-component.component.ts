@@ -9,7 +9,7 @@ export class CustomStepComponentComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

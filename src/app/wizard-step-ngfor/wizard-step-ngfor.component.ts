@@ -32,7 +32,7 @@ export class WizardStepNgForComponent implements OnInit {
 
   }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

@@ -9,7 +9,7 @@ export class DefaultWizardStepComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

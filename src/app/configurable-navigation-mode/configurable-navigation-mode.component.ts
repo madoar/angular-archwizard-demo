@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfigurableNavigationModeComponent implements OnInit {
 
-  navigateBackward: 'allow'|'deny' = 'allow';
-  navigateForward: 'allow'|'deny'|'visited' = 'deny';
+  public navigateBackward: 'allow'|'deny' = 'allow';
+  public navigateForward: 'allow'|'deny'|'visited' = 'deny';
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }

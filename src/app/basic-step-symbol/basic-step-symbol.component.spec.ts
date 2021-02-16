@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { BasicStepSymbolComponent } from './basic-step-symbol.component';
 import { BasicStepSymbolModule } from './basic-step-symbol.module';
@@ -7,7 +7,7 @@ describe('BasicStepSymbolComponent', () => {
   let component: BasicStepSymbolComponent;
   let fixture: ComponentFixture<BasicStepSymbolComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ BasicStepSymbolModule ]
     })

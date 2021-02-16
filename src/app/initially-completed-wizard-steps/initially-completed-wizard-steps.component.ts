@@ -9,7 +9,7 @@ export class InitiallyCompletedWizardStepsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }
