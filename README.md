@@ -1,5 +1,5 @@
 # Overview angular-archwizard-demo
-[![Build Status](https://travis-ci.com/madoar/angular-archwizard-demo.svg?branch=develop)](https://travis-ci.com/madoar/angular-archwizard-demo)
+[![Build Status](https://github.com/madoar/angular-archwizard-demo/workflows/build/badge.svg?branch=develop)](https://github.com/madoar/angular-archwizard-demo/actions)
 
 This project contains a demo application for the [angular-archwizard](https://github.com/madoar/angular-archwizard) library for Angular 9+.
 
